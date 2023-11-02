@@ -1,4 +1,4 @@
-public class Usuario
+public class Registro
 {
     public int IDUsuario {get; set;} 
     public string Nombre_usuario {get; set;} 
