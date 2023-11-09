@@ -1,0 +1,16 @@
+@{
+    ViewData["Title"] = "Favoritos";
+}
+@foreach (Casa casa in ViewBag.Favoritos)
+{
+    <div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <img src = "@ViewBag.FotoCasa" />
+    <h5 class="card-title">@ViewBag.NombreCasa</h5>
+    <p>@ViewBag.Precio</p>
+    <p>@ViewBag.Direccion</p>
+    </div>
+    </div>
+}
+

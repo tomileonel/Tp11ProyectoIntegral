@@ -8,4 +8,5 @@ public class Casa
     public bool Parrilla {get; set;} 
     public int Cantidad_ambientes {get; set;} 
     public bool Balcon {get; set;} 
+    public string FotoCasa {get; set;}
 }
