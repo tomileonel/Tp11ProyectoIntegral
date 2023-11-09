@@ -25,8 +25,16 @@ public class HomeController : Controller
 
     public IActionResult Favoritos ()
     {
-        ViewBag.Favoritos = 
-        return View()
+        ViewBag.Favoritos = BD.VerFavoritos();
+        return View();
+    }
+
+    public IActionResult CasasFiltradas()
+    {
+        ViewBag.pileta = BD.TienePileta();
+        Viewbag.parrilla = BD.TieneParrilla();
+        ViewBag.balcon = BD.TieneBalcon()
+        ViewBag.cantAmbientes = BD.CantidadAmbientes
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -1,0 +1,8 @@
+Z:\PROGRAMACION2023\TP11\Tp11ProyectoIntegral\obj\Debug\net7.0\Tp11ProyectoIntegral.csproj.AssemblyReference.cache
+Z:\PROGRAMACION2023\TP11\Tp11ProyectoIntegral\obj\Debug\net7.0\Tp11ProyectoIntegral.GeneratedMSBuildEditorConfig.editorconfig
+Z:\PROGRAMACION2023\TP11\Tp11ProyectoIntegral\obj\Debug\net7.0\Tp11ProyectoIntegral.AssemblyInfoInputs.cache
+Z:\PROGRAMACION2023\TP11\Tp11ProyectoIntegral\obj\Debug\net7.0\Tp11ProyectoIntegral.AssemblyInfo.cs
+Z:\PROGRAMACION2023\TP11\Tp11ProyectoIntegral\obj\Debug\net7.0\Tp11ProyectoIntegral.csproj.CoreCompileInputs.cache
+Z:\PROGRAMACION2023\TP11\Tp11ProyectoIntegral\obj\Debug\net7.0\Tp11ProyectoIntegral.MvcApplicationPartsAssemblyInfo.cache
+Z:\PROGRAMACION2023\TP11\Tp11ProyectoIntegral\obj\Debug\net7.0\Tp11ProyectoIntegral.RazorAssemblyInfo.cache
+Z:\PROGRAMACION2023\TP11\Tp11ProyectoIntegral\obj\Debug\net7.0\Tp11ProyectoIntegral.RazorAssemblyInfo.cs
