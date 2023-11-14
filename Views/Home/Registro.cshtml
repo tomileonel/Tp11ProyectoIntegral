@@ -1,4 +1,29 @@
 @{
     ViewData["Title"] = "Registro";
 }
+<h2>Registro</h2>
 
+@using (Html.BeginForm("Registrar", "Registro", FormMethod.Post))
+{
+    @Html.ValidationSummary(true)
+
+    <div>
+        @Html.LabelFor(model => Usuario.Registrarte.Nombre)
+        @Html.TextBoxFor(model => Usuario.Registrarte.Nombre)
+        @Html.ValidationMessageFor(model => Usuario.Registrarte.Nombre)
+    </div>
+
+    <div>
+        @Html.LabelFor(model => Usuario.Registrarte.Email)
+        @Html.TextBoxFor(model => Usuario.Registrarte.Email)
+        @Html.ValidationMessageFor(model => Usuario.Registrarte.Email)
+    </div>
+
+    <div>
+        @Html.LabelFor(model => Usuario.Registrarte.Contraseña)
+        @Html.PasswordFor(model => Usuario.Registrarte.Contraseña)
+        @Html.ValidationMessageFor(model => Usuario.Registrarte.Contraseña)
+    </div>
+
+    <input type="submit" value="Registrar" />
+}

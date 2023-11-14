@@ -29,6 +29,30 @@ public static Registro Registrarte (string Nombre, string Apellido, string Email
     return registrar;
 }
 
+public static Registro EditarPerfil (string Nombre, string Apellido, string Email, string Contraseña, int Telefono, string FotoPerfil)
+{
+    Registro editar = null;
+    using (SqlConnection DB = new SqlConnection(_connectionString))
+    {
+        string SP = "EditarPerfil";
+        editar = DB.QueryFirstOfDefault<Registro>(SP, new {Nombre_usuario = Nombre}, new {Apellido_usuario = Apellido}, new {Email = Email}, new {Contraseña = Contraseña}, new {Email = Email}, new {Contraseña = Contraseña},
+        commandType: CommandType.StoredProcedure);
+    }
+    return editar;
+}
+
+public static List<Casa> BuscarCasa(string Nombre, string Direccion, float Precio, bool Pileta, bool Parrilla, int CantAmb, bool Balcon)
+{
+    Casa buscar = null;
+    using (SqlConnection DB = new SqlConnection(_connectionString))
+    {
+        string SP = "BuscarCasa";
+        buscar = DB.Query<Casa>(SP, new {Nombre_casa = Nombre}, new {Direccion_casa = Direccion}, new {Precio = Precio}, new {Pileta = Pileta}, new {Parrilla = Parrilla}, new {Cantidad_ambientes = CantAmb}, new {Balcon = Balcon},
+        commandType: CommandType.StoredProcedure).ToList();
+    }
+    return buscar;
+}
+
 public static List<Alquiler> ObtenerSemanasDisponibles(int idCasa, int mes, int anio)
 {
     Alquiler fechas = null;
@@ -41,7 +65,18 @@ public static List<Alquiler> ObtenerSemanasDisponibles(int idCasa, int mes, int 
     return fechas;
 }
 
-public static Favorito GuardarFavoritos(int idUsu, int idCasa)
+public static Alquiler Reservar (int idC, int idU, int mes, int año, int sem)
+{
+    Alquiler reservar = null;
+    using (SqlConnection DB = new SqlConnection(_connectionString))
+    {
+        string SP = "Reservar";
+        reservar = DB.QueryFirstOfDefault<Alquiler>(SP, new {IDCasa = idC}, new {IDUsuario = idU}, new {Mes = mes}, new {Anio = año}, new {Semana = sem},
+        commandType: CommandType.StoredProcedure);
+    }
+}
+
+public static List<Favorito> GuardarFavoritos(int idUsu, int idCasa)
 {
     Favorito guardarFav = null;
     using (SqlConnection DB = new SqlConnection(_connectionString))
@@ -53,7 +88,7 @@ public static Favorito GuardarFavoritos(int idUsu, int idCasa)
     return guardarFav;
 }
 
-public static Favorito VerFavoritos(int udUsu)
+public static List<Favorito> VerFavoritos(int udUsu)
 {
     Favorito verFav = null;
     using (SqlConnection DB = new SqlConnection(_connectionString))
@@ -65,7 +100,7 @@ public static Favorito VerFavoritos(int udUsu)
     return verFav;
 }
 
-public static Casa TienePileta(bool pileta)
+public static List<Casa> TienePileta(bool pileta)
 {
     Casa pile = null;
     using (SqlConnection DB = new SqlConnection(_connectionString))
@@ -110,6 +145,7 @@ public static Casa CantidadAmbientes(int cantAmbientes)
         amb = DB.Query<Casa>(SP, new {Cantidad_ambientes = cantAmbientes},
         commandType: CommandType.StoredProcedure).ToList(); 
     }
+    return amb;
 }
 
 }

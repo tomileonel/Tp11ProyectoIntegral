@@ -16,12 +16,12 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = Z:\PROGRAMACION2023\TP11\Tp11ProyectoIntegral
 build_property._RazorSourceGeneratorDebug = 
 
-[Z:/PROGRAMACION2023/TP11/Tp11ProyectoIntegral/Views/Home/Casa.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXNhLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [Z:/PROGRAMACION2023/TP11/Tp11ProyectoIntegral/Views/Home/CasaFiltros.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXNhRmlsdHJvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[Z:/PROGRAMACION2023/TP11/Tp11ProyectoIntegral/Views/Home/EditarPerfil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0YXJQZXJmaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [Z:/PROGRAMACION2023/TP11/Tp11ProyectoIntegral/Views/Home/Favoritos.cshtml]

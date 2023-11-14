@@ -31,10 +31,28 @@ public class HomeController : Controller
 
     public IActionResult CasasFiltradas()
     {
-        ViewBag.pileta = BD.TienePileta();
-        Viewbag.parrilla = BD.TieneParrilla();
-        ViewBag.balcon = BD.TieneBalcon()
-        ViewBag.cantAmbientes = BD.CantidadAmbientes
+        ViewBag.pileta = BD.TienePileta(pileta);
+        ViewBag.parrilla = BD.TieneParrilla(parrilla);
+        ViewBag.balcon = BD.TieneBalcon(balcon);
+        ViewBag.cantAmbientes = BD.CantidadAmbientes(cantAmbientes);
+        return View();
+    }
+
+    public IActionResult Registro ()
+    {
+        ViewBag.Usuario = BD.Registrarte();
+        return View();
+    }
+
+   public IActionResult EditarPerfil()
+    {
+        return View();
+    }
+
+    public IActionResult ActualizarPerfil()
+    {
+        BD.EditarPerfil(nombre, apellido, mail, contraseña)
+        return View();
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
@@ -42,4 +60,7 @@ public class HomeController : Controller
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
+
+
+   
 }
