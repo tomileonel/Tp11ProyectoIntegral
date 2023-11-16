@@ -91,6 +91,16 @@ CREATE PROCEDURE TraerCasas
 	GO
 EXEC TraerCasas
 
+--Traer una sola casa(IdCasa)
+CREATE PROCEDURE TraerUnaCasa
+@idCasa int
+	AS
+	BEGIN
+		SELECT * FROM Casa WHERE IdCasa = @idCasa
+	END
+	GO
+EXEC TraerUnaCasa
+
 --ObtenerSemanasDisponibles(idCasa,a�o,mes)
 Create PROCEDURE ObtenerSemanasDisponibles
 @IdCasa int,

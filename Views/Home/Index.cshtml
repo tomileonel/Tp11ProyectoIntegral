@@ -9,7 +9,7 @@
     <h2 class="card-title">@casa.Nombre_casa</h2>
     <h4 class="card-title">@casa.Direccion_casa</h4>
     <h4 class="card-title">@casa.Precio</h4>
-    <a href='@Url.Action("Casa", "Home")' class="btn btn-primary">Alquilar</a>
+    <a href='@Url.Action("Casa", new { IdCasa = @casa.IDCasa })' class="btn btn-primary">Alquilar</a>
   </div>
 </div>
 }

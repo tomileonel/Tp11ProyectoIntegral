@@ -31,6 +31,12 @@ public class HomeController : Controller
         return View();
     }
 
+      public IActionResult Casa(int idCasa)
+    {
+        ViewBag.unaCasa = BD.TraerUnaCasa(idCasa);
+        return View();
+    }
+
     public IActionResult Favoritos (int idUsu)
     {
         ViewBag.Favoritos = BD.VerFavoritos(idUsu);
