@@ -511,11 +511,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Z:\\PROGRAMACION2023\\TP11\\Tp11ProyectoIntegral\\Tp11ProyectoIntegral.csproj",
+      "projectUniqueName": "C:\\Users\\47574606\\Documents\\TP11\\Tp11ProyectoIntegral\\Tp11ProyectoIntegral.csproj",
       "projectName": "Tp11ProyectoIntegral",
-      "projectPath": "Z:\\PROGRAMACION2023\\TP11\\Tp11ProyectoIntegral\\Tp11ProyectoIntegral.csproj",
+      "projectPath": "C:\\Users\\47574606\\Documents\\TP11\\Tp11ProyectoIntegral\\Tp11ProyectoIntegral.csproj",
       "packagesPath": "C:\\Users\\47574606\\.nuget\\packages\\",
-      "outputPath": "Z:\\PROGRAMACION2023\\TP11\\Tp11ProyectoIntegral\\obj\\",
+      "outputPath": "C:\\Users\\47574606\\Documents\\TP11\\Tp11ProyectoIntegral\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,8 +1,16 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Index";
+}
+@foreach (Casa casa in ViewBag.Casas)
+{
+    <div class="card" style="width: 18rem;">
+  <img src='@casa.FotoCasa' class="card-img-top" >
+  <div class="card-body">
+    <h2 class="card-title">@casa.Nombre_casa</h2>
+    <h4 class="card-title">@casa.Direccion_casa</h4>
+    <h4 class="card-title">@casa.Precio</h4>
+    <a href='@Url.Action("Casa", "Home")' class="btn btn-primary">Alquilar</a>
+  </div>
+</div>
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>

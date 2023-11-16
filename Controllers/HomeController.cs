@@ -15,32 +15,31 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        ViewBag.Casas = BD.TraerCasas();
         return View();
     }
+
+  public IActionResult Buscar(string Nombre, string Direccion, float Precio, bool Pileta, bool Parrilla, int CantAmb, bool Balcon)
+    {
+        ViewBag.Casas = BD.BuscarCasa(Nombre, Direccion, Precio, Pileta, Parrilla, CantAmb, Balcon);
+        return View("Index");
+    }
+
 
     public IActionResult Privacy()
     {
         return View();
     }
 
-    public IActionResult Favoritos ()
+    public IActionResult Favoritos (int idUsu)
     {
-        ViewBag.Favoritos = BD.VerFavoritos();
+        ViewBag.Favoritos = BD.VerFavoritos(idUsu);
         return View();
     }
 
-    public IActionResult CasasFiltradas()
+    public IActionResult Registro (string Nombre, string Apellido, string Email, string Contraseña)
     {
-        ViewBag.pileta = BD.TienePileta(pileta);
-        ViewBag.parrilla = BD.TieneParrilla(parrilla);
-        ViewBag.balcon = BD.TieneBalcon(balcon);
-        ViewBag.cantAmbientes = BD.CantidadAmbientes(cantAmbientes);
-        return View();
-    }
-
-    public IActionResult Registro ()
-    {
-        ViewBag.Usuario = BD.Registrarte();
+        ViewBag.Usuario = BD.Registrarte(Nombre, Apellido, Email, Contraseña);
         return View();
     }
 
@@ -49,9 +48,9 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult ActualizarPerfil()
+    public IActionResult ActualizarPerfil(string Nombre, string Apellido, string Email, string Contraseña, int Telefono, string FotoPerfil)
     {
-        BD.EditarPerfil(nombre, apellido, mail, contraseña)
+        BD.EditarPerfil( Nombre,  Apellido,  Email,  Contraseña,  Telefono, FotoPerfil);
         return View();
     }
 

@@ -1,26 +1,26 @@
---SP de iniciar sesion (gmail, contraseña) 
+--SP de iniciar sesion (gmail, contraseï¿½a) 
 CREATE PROCEDURE IniciarSesion
  @gmail VARCHAR(50),
- @contraseña VARCHAR(50)
+ @contraseï¿½a VARCHAR(50)
 	AS
 	BEGIN
-		Select * from Registro R where R.Email = @gmail and R.Contraseña = @contraseña
+		Select * from Registro R where R.Email = @gmail and R.Contraseï¿½a = @contraseï¿½a
 	END 
 	GO
 
 EXEC IniciarSesion
---SP de registrarte (nombre usuario,apellido usuario, contraseña,gmail)
+--SP de registrarte (nombre usuario,apellido usuario, contraseï¿½a,gmail)
 CREATE PROCEDURE Registrarte
 @nombreU Varchar(50),
 @apellidoU Varchar(50),
 @gmail VARCHAR(50),
-@contraseña VARCHAR(50)
+@contraseï¿½a VARCHAR(50)
 	AS
 	BEGIN
 	Insert into Registro
-	(Nombre_usuario,Apellido_usuario,Email,Contraseña)
+	(Nombre_usuario,Apellido_usuario,Email,Contraseï¿½a)
 	Values
-	(@nombreU,@apellidoU,@gmail,@contraseña)
+	(@nombreU,@apellidoU,@gmail,@contraseï¿½a)
 		
 	END 
 	GO
@@ -31,7 +31,7 @@ CREATE PROCEDURE EditarPerfil
 @nombreU Varchar(50),
 @apellidoU Varchar(50),
 @gmail VARCHAR(50),
-@contraseña VARCHAR(50),
+@contraseï¿½a VARCHAR(50),
 @telefono Int,
 @fotoPerfil varchar(200)
 	AS
@@ -73,16 +73,25 @@ WHERE
 	AND (Direccion_casa LIKE @direccion)
 	AND (Cantidad_ambientes IS NULL OR Cantidad_ambientes >= @CantidadAmbientes)
 	AND (Precio IS NULL OR Precio >= @precio)
-	AND (Pileta = @pileta)
-	AND (Parrila = @parrilla)
-	AND (Balcon = @bacon)
+	AND (Pileta Is null or Pileta = @pileta)
+	AND (Parrila  Is null or Parrila = @parrilla)
+	AND (Balcon is null or Balcon = @bacon)
 
 END
 GO
 
 EXEC BuscarCasa
 
---ObtenerSemanasDisponibles(idCasa,año,mes)
+--TraerCasas
+CREATE PROCEDURE TraerCasas
+	AS
+	BEGIN
+		SELECT * FROM Casa
+	END 
+	GO
+EXEC TraerCasas
+
+--ObtenerSemanasDisponibles(idCasa,aï¿½o,mes)
 Create PROCEDURE ObtenerSemanasDisponibles
 @IdCasa int,
 @mes int,
@@ -95,7 +104,7 @@ Create PROCEDURE ObtenerSemanasDisponibles
 EXEC ObtenerSemanasDisponibles
 
 
---Reservar(idCasa,idUsuario,año,mes,semana)
+--Reservar(idCasa,idUsuario,aï¿½o,mes,semana)
 Create PROCEDURE Reservar
 @IdUser int,
 @IdCasa int,

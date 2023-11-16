@@ -1,4 +1,5 @@
 using System.Data.SqlClient;
+using System.Data;
 using Dapper;
 
 public static class BD {
@@ -11,7 +12,7 @@ public static Registro IniciarSesion(string Email, string Contraseña)
     using (SqlConnection DB = new SqlConnection(_connectionString))
     {
         string SP = "IniciarSesion";
-        iniciar = DB.QueryFirstOfDefault<Registro>(SP, new {Email = Email}, new {Contraseña = Contraseña},
+        iniciar = DB.QueryFirstOrDefault<Registro>(SP, new {Email = Email, Contraseña = Contraseña},
         commandType: CommandType.StoredProcedure);
     }
     return iniciar;
@@ -23,7 +24,7 @@ public static Registro Registrarte (string Nombre, string Apellido, string Email
     using (SqlConnection DB = new SqlConnection(_connectionString))
     {
         string SP = "Registrate";
-        registrar = DB.QueryFirstOfDefault<Registro>(SP, new {Nombre_usuario = Nombre}, new {Apellido_usuario = Apellido}, new {Email = Email}, new {Contraseña = Contraseña},
+        registrar = DB.QueryFirstOrDefault<Registro>(SP, new {Nombre_usuario = Nombre, Apellido_usuario = Apellido, Email = Email, Contraseña = Contraseña},
         commandType: CommandType.StoredProcedure);   
     }
     return registrar;
@@ -35,7 +36,7 @@ public static Registro EditarPerfil (string Nombre, string Apellido, string Emai
     using (SqlConnection DB = new SqlConnection(_connectionString))
     {
         string SP = "EditarPerfil";
-        editar = DB.QueryFirstOfDefault<Registro>(SP, new {Nombre_usuario = Nombre}, new {Apellido_usuario = Apellido}, new {Email = Email}, new {Contraseña = Contraseña}, new {Email = Email}, new {Contraseña = Contraseña},
+        editar = DB.QueryFirstOrDefault<Registro>(SP, new {Nombre_usuario = Nombre,  Apellido_usuario = Apellido, Email = Email, Contraseña = Contraseña},
         commandType: CommandType.StoredProcedure);
     }
     return editar;
@@ -43,11 +44,23 @@ public static Registro EditarPerfil (string Nombre, string Apellido, string Emai
 
 public static List<Casa> BuscarCasa(string Nombre, string Direccion, float Precio, bool Pileta, bool Parrilla, int CantAmb, bool Balcon)
 {
-    Casa buscar = null;
+    List<Casa> buscar = null;
     using (SqlConnection DB = new SqlConnection(_connectionString))
     {
         string SP = "BuscarCasa";
-        buscar = DB.Query<Casa>(SP, new {Nombre_casa = Nombre}, new {Direccion_casa = Direccion}, new {Precio = Precio}, new {Pileta = Pileta}, new {Parrilla = Parrilla}, new {Cantidad_ambientes = CantAmb}, new {Balcon = Balcon},
+        buscar = DB.Query<Casa>(SP, new {Nombre_casa = Nombre, Direccion_casa = Direccion, Precio = Precio, Pileta = Pileta, Parrilla = Parrilla, Cantidad_ambientes = CantAmb, Balcon = Balcon},
+        commandType: CommandType.StoredProcedure).ToList();
+    }
+    return buscar;
+}
+
+public static List<Casa> TraerCasas()
+{
+    List<Casa> buscar = null;
+    using (SqlConnection DB = new SqlConnection(_connectionString))
+    {
+        string SP = "TraerCasas";
+        buscar = DB.Query<Casa>(SP,
         commandType: CommandType.StoredProcedure).ToList();
     }
     return buscar;
@@ -55,11 +68,11 @@ public static List<Casa> BuscarCasa(string Nombre, string Direccion, float Preci
 
 public static List<Alquiler> ObtenerSemanasDisponibles(int idCasa, int mes, int anio)
 {
-    Alquiler fechas = null;
+    List<Alquiler> fechas = null;
     using (SqlConnection DB = new SqlConnection(_connectionString))
     {
         string SP = "ObtenerSemanasDisponibles";
-        fechas = DB.Query<Alquiler>(SP, new {IDCasa = idCasa}, new {Mes = mes}, new {Anio = anio},
+        fechas = DB.Query<Alquiler>(SP, new {IDCasa = idCasa, Mes = mes, Anio = anio},
         commandType: CommandType.StoredProcedure).ToList();   
     }
     return fechas;
@@ -71,81 +84,82 @@ public static Alquiler Reservar (int idC, int idU, int mes, int año, int sem)
     using (SqlConnection DB = new SqlConnection(_connectionString))
     {
         string SP = "Reservar";
-        reservar = DB.QueryFirstOfDefault<Alquiler>(SP, new {IDCasa = idC}, new {IDUsuario = idU}, new {Mes = mes}, new {Anio = año}, new {Semana = sem},
+        reservar = DB.QueryFirstOrDefault<Alquiler>(SP, new {IDCasa = idC, IDUsuario = idU, Mes = mes, Anio = año, Semana = sem},
         commandType: CommandType.StoredProcedure);
     }
+    return reservar;
 }
 
 public static List<Favorito> GuardarFavoritos(int idUsu, int idCasa)
 {
-    Favorito guardarFav = null;
+    List<Favorito> guardarFav = null;
     using (SqlConnection DB = new SqlConnection(_connectionString))
     {
         string SP = "GuardarFavoritos";
-        guardarFav = DB.Query<Favoritos>(SP, new {IDUsuario = idUsu}, new {idCasa = idCasa},
+        guardarFav = DB.Query<Favorito>(SP, new {IDUsuario = idUsu, IdCasa = idCasa},
         commandType: CommandType.StoredProcedure).ToList(); 
     }
     return guardarFav;
 }
 
-public static List<Favorito> VerFavoritos(int udUsu)
+public static List<Favorito> VerFavoritos(int idUsu)
 {
-    Favorito verFav = null;
+    List<Favorito> verFav = null;
     using (SqlConnection DB = new SqlConnection(_connectionString))
     {
         string SP = "VerFavoritos";
-        verFav = DB.Query<Favoritos>(SP, new {IDUsuario = idUsu},
+        verFav = DB.Query<Favorito>(SP, new {IDUsuario = idUsu},
         commandType: CommandType.StoredProcedure).ToList(); 
     }
     return verFav;
 }
 
-public static List<Casa> TienePileta(bool pileta)
-{
-    Casa pile = null;
-    using (SqlConnection DB = new SqlConnection(_connectionString))
-    {
-        string SP = "TienePileta";
-        pile = DB.Query<Casa>(SP, new {Pileta = pileta},
-        commandType: CommandType.StoredProcedure).ToList(); 
-    }
-    return pile;
-}
+// public static List<Casa> TienePileta(bool pileta)
+// {
+//     Casa pile = null;
+//     using (SqlConnection DB = new SqlConnection(_connectionString))
+//     {
+//         string SP = "TienePileta";
+//         pile = DB.Query<Casa>(SP, new {Pileta = pileta},
+//         commandType: CommandType.StoredProcedure).ToList(); 
+//     }
+//     return pile;
+// }
 
-public static Casa TieneParrilla(bool parrilla)
-{
-    Casa parri = null;
-    using (SqlConnection DB = new SqlConnection(_connectionString))
-    {
-        string SP = "TieneParrilla";
-        parri = DB.Query<Casa>(SP, new {Parrilla = parrilla},
-        commandType: CommandType.StoredProcedure).ToList(); 
-    }
-    return parri;
-}
+// public static Casa TieneParrilla(bool parrilla)
+// {
+//     Casa parri = null;
+//     using (SqlConnection DB = new SqlConnection(_connectionString))
+//     {
+//         string SP = "TieneParrilla";
+//         parri = DB.Query<Casa>(SP, new {Parrilla = parrilla},
+//         commandType: CommandType.StoredProcedure).ToList(); 
+//     }
+//     return parri;
+// }
 
-public static Casa TieneBalcon(bool balcon)
-{
-    Casa bal = null;
-    using (SqlConnection DB = new SqlConnection(_connectionString))
-    {
-        string SP = "TieneBalcon";
-        bal = DB.Query<Casa>(SP, new {Balcon = balcon},
-        commandType: CommandType.StoredProcedure).ToList(); 
-    }
-    return bal;
-}
+// public static Casa TieneBalcon(bool balcon)
+// {
+//     Casa bal = null;
+//     using (SqlConnection DB = new SqlConnection(_connectionString))
+//     {
+//         string SP = "TieneBalcon";
+//         bal = DB.Query<Casa>(SP, new {Balcon = balcon},
+//         commandType: CommandType.StoredProcedure).ToList(); 
+//     }
+//     return bal;
+// }
 
-public static Casa CantidadAmbientes(int cantAmbientes)
-{
-    Casa amb = null;
-    using (SqlConnection DB = new SqlConnection(_connectionString))
-    {
-        string SP = "CantidadAmbientes";
-        amb = DB.Query<Casa>(SP, new {Cantidad_ambientes = cantAmbientes},
-        commandType: CommandType.StoredProcedure).ToList(); 
-    }
-    return amb;
-}
+// public static Casa CantidadAmbientes(int cantAmbientes)
+// {
+//     Casa amb = null;
+//     using (SqlConnection DB = new SqlConnection(_connectionString))
+//     {
+//         string SP = "CantidadAmbientes";
+//         amb = DB.Query<Casa>(SP, new {Cantidad_ambientes = cantAmbientes},
+//         commandType: CommandType.StoredProcedure).ToList(); 
+//     }
+//     return amb;
+// }
 
 }
