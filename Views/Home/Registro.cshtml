@@ -1,5 +1,13 @@
 @{
     ViewData["Title"] = "Registro";
 }
+
 <h2>Registro</h2>
 
+<form action="RegistroCompleto" method="post">
+  <input type="text" name="Nombre" placeholder="Nombre">
+  <input type="text" name="Apellido" placeholder="Apellido">
+  <input type="email" name="Email" placeholder="Email">
+  <input type="password" name="Contraseña" placeholder="Contraseña">
+  <input type="submit" value="Registrar">
+</form>

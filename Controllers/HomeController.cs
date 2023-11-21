@@ -43,9 +43,14 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult Registro (string Nombre, string Apellido, string Email, string Contraseña)
+    public IActionResult RegistroCompleto (string Nombre, string Apellido, string Email, string Contraseña)
     {
         ViewBag.Usuario = BD.Registrarte(Nombre, Apellido, Email, Contraseña);
+        return RedirectToAction("Index");
+    }
+
+        public IActionResult Registro()
+    {
         return View();
     }
 
