@@ -27,7 +27,7 @@ CREATE PROCEDURE Registrarte
 
 EXEC Registrarte
 --SP de editar perfil (todo menos id 6 campos)
-CREATE PROCEDURE EditarPerfil
+alter PROCEDURE EditarPerfil
 @nombreU Varchar(50),
 @apellidoU Varchar(50),
 @gmail VARCHAR(50),

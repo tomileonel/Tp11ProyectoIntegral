@@ -6,4 +6,5 @@ public class Alquiler
     public int Semana {get; set;}
     public int IDUsuario {get; set;}
     public int IDCasa {get; set;}
+    public DateTime FechaOperacion {get; set;}
 }
