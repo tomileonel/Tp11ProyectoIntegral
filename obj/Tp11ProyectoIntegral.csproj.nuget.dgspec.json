@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\47349708\\Downloads\\Tp11ProyectoIntegral\\Tp11ProyectoIntegral.csproj": {}
+    "Z:\\PROGRAMACION2023\\TP11\\Tp11ProyectoIntegral\\Tp11ProyectoIntegral.csproj": {}
   },
   "projects": {
-    "C:\\Users\\47349708\\Downloads\\Tp11ProyectoIntegral\\Tp11ProyectoIntegral.csproj": {
+    "Z:\\PROGRAMACION2023\\TP11\\Tp11ProyectoIntegral\\Tp11ProyectoIntegral.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\47349708\\Downloads\\Tp11ProyectoIntegral\\Tp11ProyectoIntegral.csproj",
+        "projectUniqueName": "Z:\\PROGRAMACION2023\\TP11\\Tp11ProyectoIntegral\\Tp11ProyectoIntegral.csproj",
         "projectName": "Tp11ProyectoIntegral",
-        "projectPath": "C:\\Users\\47349708\\Downloads\\Tp11ProyectoIntegral\\Tp11ProyectoIntegral.csproj",
-        "packagesPath": "C:\\Users\\47349708\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\47349708\\Downloads\\Tp11ProyectoIntegral\\obj\\",
+        "projectPath": "Z:\\PROGRAMACION2023\\TP11\\Tp11ProyectoIntegral\\Tp11ProyectoIntegral.csproj",
+        "packagesPath": "C:\\Users\\47574606\\.nuget\\packages\\",
+        "outputPath": "Z:\\PROGRAMACION2023\\TP11\\Tp11ProyectoIntegral\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\47349708\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\47574606\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -46,7 +46,7 @@
           "dependencies": {
             "Dapper": {
               "target": "Package",
-              "version": "[2.1.21, )"
+              "version": "[2.1.24, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",
