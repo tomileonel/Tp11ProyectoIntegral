@@ -31,6 +31,12 @@ public class HomeController : Controller
         return View();
     }
 
+      public IActionResult Casa(int idCasa)
+    {
+        ViewBag.unaCasa = BD.TraerUnaCasa(idCasa);
+        return View();
+    }
+
     public IActionResult Favoritos (int idUsu)
     {
         ViewBag.Favoritos = BD.VerFavoritos(idUsu);
@@ -53,6 +59,38 @@ public class HomeController : Controller
         BD.EditarPerfil( Nombre,  Apellido,  Email,  Contraseña,  Telefono, FotoPerfil);
         return View();
     }
+
+    public Registro DetallesAjaxLogin (string Email, string Contraseña)
+    {
+        ViewBag.usu = BD.IniciarSesion(Email, Contraseña);
+        return ViewBag.usu;
+    }
+
+    public IActionResult VerificarContraseña(string Email, string Contraseña)
+    {
+        if (string.IsNullOrEmpty(Contraseña)  || string.IsNullOrEmpty(Email) )
+        {
+            ViewBag.Error = "Se deben completar todos los campos";
+            return RedirectToAction("Index");
+        }
+        else
+        {
+            Login verificar = BD.IniciarSesion(Email, Contraseña);
+        
+            if (verificar != null)
+            {
+                if (Contraseña == verificar.Contraseña)
+                {
+                    return RedirectToAction("Index", "Home", new {id=verificar.id});
+                }
+            }
+            else
+            {
+                ViewBag.Verificar = "El usuario y/o contraseña ingresada son incorrectos";
+            }
+
+            return View("Index");
+        }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

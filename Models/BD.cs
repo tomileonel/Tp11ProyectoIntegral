@@ -5,7 +5,7 @@ using Dapper;
 public static class BD {
     private static string _connectionString = @"Server=localhost; DataBase=TP11Integral; Trusted_Connection=True;";
 
-
+public static Registro Usuario;
 public static Registro IniciarSesion(string Email, string Contraseña)
 {
     Registro iniciar = null;
@@ -15,6 +15,7 @@ public static Registro IniciarSesion(string Email, string Contraseña)
         iniciar = DB.QueryFirstOrDefault<Registro>(SP, new {Email = Email, Contraseña = Contraseña},
         commandType: CommandType.StoredProcedure);
     }
+    Usuario = iniciar;
     return iniciar;
 } 
 
@@ -112,6 +113,18 @@ public static List<Favorito> VerFavoritos(int idUsu)
         commandType: CommandType.StoredProcedure).ToList(); 
     }
     return verFav;
+}
+
+public static Casa TraerUnaCasa(int idCasa)
+{
+    Casa unaCasa = null;
+    using (SqlConnection DB = new SqlConnection(_connectionString))
+    {
+        string SP = "TraerUnaCasa";
+        unaCasa = DB.QueryFirstOrDefault<Casa>(SP, new {IdCasa = idCasa},
+        commandType: CommandType.StoredProcedure);
+    }
+    return unaCasa;
 }
 
 // public static List<Casa> TienePileta(bool pileta)
