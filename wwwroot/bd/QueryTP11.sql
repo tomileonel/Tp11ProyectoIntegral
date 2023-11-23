@@ -1,10 +1,10 @@
 --SP de iniciar sesion (gmail, contrase�a) 
 CREATE PROCEDURE IniciarSesion
  @gmail VARCHAR(50),
- @contrase�a VARCHAR(50)
+ @contrasena VARCHAR(50)
 	AS
 	BEGIN
-		Select * from Registro R where R.Email = @gmail and R.Contrase�a = @contrase�a
+		Select * from Registro R where R.Email = @gmail and R.Contrasena = @contrasena
 	END 
 	GO
 
@@ -14,30 +14,30 @@ CREATE PROCEDURE Registrarte
 @nombreU Varchar(50),
 @apellidoU Varchar(50),
 @gmail VARCHAR(50),
-@contrase�a VARCHAR(50)
+@contrasena VARCHAR(50)
 	AS
 	BEGIN
 	Insert into Registro
-	(Nombre_usuario,Apellido_usuario,Email,Contrase�a)
+	(Nombre_usuario,Apellido_usuario,Email,Contrasena)
 	Values
-	(@nombreU,@apellidoU,@gmail,@contrase�a)
+	(@nombreU,@apellidoU,@gmail,@contrasena)
 		
 	END 
 	GO
 
 EXEC Registrarte
 --SP de editar perfil (todo menos id 6 campos)
-CREATE PROCEDURE EditarPerfil
+alter PROCEDURE EditarPerfil
 @nombreU Varchar(50),
 @apellidoU Varchar(50),
 @gmail VARCHAR(50),
-@contrase�a VARCHAR(50),
+@contrasena VARCHAR(50),
 @telefono Int,
-@fotoPerfil varchar(200)
-	AS
+@foto varchar (200)
+AS
 	BEGIN
 UPDATE Registro
-SET Nombre_usuario = @nombreU, Apellido_usuario = @apellidoU,Telefono = @telefono, FotoDePerfil = @fotoPerfil
+SET Nombre_usuario = @nombreU, Apellido_usuario = @apellidoU,Telefono = @telefono, FotoDePerfil = @foto
 Where Email = @gmail
 	END 
 	GO

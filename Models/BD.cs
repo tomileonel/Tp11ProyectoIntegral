@@ -24,8 +24,8 @@ public static Registro Registrarte (string Nombre, string Apellido, string Email
     Registro registrar = null;
     using (SqlConnection DB = new SqlConnection(_connectionString))
     {
-        string SP = "Registrate";
-        registrar = DB.QueryFirstOrDefault<Registro>(SP, new {Nombre_usuario = Nombre, Apellido_usuario = Apellido, Email = Email, Contraseña = Contraseña},
+        string SP = "Registrarte";
+        registrar = DB.QueryFirstOrDefault<Registro>(SP, new {nombreU = Nombre, apellidoU = Apellido, gmail = Email, contrasena = Contraseña},
         commandType: CommandType.StoredProcedure);   
     }
     return registrar;
