@@ -91,11 +91,18 @@ public class HomeController : Controller
             }
             else
             {
-                ViewBag.Verificar = "El usuario y/o Contrasena ingresada son incorrectos";
+
+
             }
 
-            return View("Index");
+            return RedirectToAction("Index");
         }
+    }
+
+    public Casa AjaxFiltros(string Nombre, string Direccion, float Precio, bool Pileta, bool Parrilla, int CantAmb, bool Balcon)
+    {
+        ViewBag.Filtros = BD.BuscarCasa( Nombre,  Direccion,  Precio,  Pileta,  Parrilla,  CantAmb,  Balcon);
+        return ViewBag.Filtros;
     }
         
 
