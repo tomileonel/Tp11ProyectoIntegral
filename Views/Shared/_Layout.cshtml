@@ -25,6 +25,11 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
+                        <li class="nav-item">
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#IniciarSesion">Launch demo modal</button>
+
+                        </li>
+                        
                     </ul>
                 </div>
             </div>
@@ -53,31 +58,34 @@
 
 
 
+
 <!-- Modal -->
 <div class="modal fade" id="IniciarSesion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-       <form>
+       <form Action='@Url.Action("VerificarContrasena", "Home")'>
         <div class="form-group">
           <div id="Email">Email</div>
-          <input type="text" class="form-control" id="Usuario" required>
+          <input type="text" class="form-control" id="Usuario"  name = "Email" required>
         </div>
         <div class="form-group">
           <div id="Contraseña">Contraseña</div>
-          <input type="password" class="form-control" id="Clave" required>
+          <input type="password" class="form-control" id="Clave" name="Contrasena" required>
         </div>
         <div class="form-group">
-          <button type="button" class="btn btn-primary" id="BotonLogin">Ingresar</button>
+          <button type="submit" class="btn btn-primary" id="BotonLogin" onclick="">Ingresar</button>
         </div>
         <div class="form-group">
-          <a href="#" id="NuevoUsuario">Nuevo usuario?</a>
+          <a href="#" id=""></a>
         </div>
       </form>
       </div>
     </div>
   </div>
 </div>
+
+
 
 </body>
 </html>

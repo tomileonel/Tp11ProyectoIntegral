@@ -6,38 +6,38 @@ public static class BD {
     private static string _connectionString = @"Server=localhost; DataBase=TP11Integral; Trusted_Connection=True;";
 
 public static Registro Usuario;
-public static Registro IniciarSesion(string Email, string Contraseña)
+public static Registro IniciarSesion(string Email1, string Contrasena)
 {
     Registro iniciar = null;
     using (SqlConnection DB = new SqlConnection(_connectionString))
     {
         string SP = "IniciarSesion";
-        iniciar = DB.QueryFirstOrDefault<Registro>(SP, new {Email = Email, Contraseña = Contraseña},
+        iniciar = DB.QueryFirstOrDefault<Registro>(SP, new {gmail = Email1, Contrasena = Contrasena},
         commandType: CommandType.StoredProcedure);
     }
     Usuario = iniciar;
     return iniciar;
 } 
 
-public static Registro Registrarte (string Nombre, string Apellido, string Email, string Contraseña)
+public static Registro Registrarte (string Nombre, string Apellido, string Email, string contrasena)
 {
     Registro registrar = null;
     using (SqlConnection DB = new SqlConnection(_connectionString))
     {
         string SP = "Registrarte";
-        registrar = DB.QueryFirstOrDefault<Registro>(SP, new {nombreU = Nombre, apellidoU = Apellido, gmail = Email, contrasena = Contraseña},
+        registrar = DB.QueryFirstOrDefault<Registro>(SP, new {nombreU = Nombre, apellidoU = Apellido, gmail = Email, contrasena = contrasena},
         commandType: CommandType.StoredProcedure);   
     }
     return registrar;
 }
 
-public static Registro EditarPerfil (string Nombre, string Apellido, string Email, string Contraseña, int Telefono, string FotoPerfil)
+public static Registro EditarPerfil (string Nombre, string Apellido, string Email, string Contrasena, int Telefono, string FotoPerfil)
 {
     Registro editar = null;
     using (SqlConnection DB = new SqlConnection(_connectionString))
     {
         string SP = "EditarPerfil";
-        editar = DB.QueryFirstOrDefault<Registro>(SP, new {Nombre_usuario = Nombre,  Apellido_usuario = Apellido, Email = Email, Contraseña = Contraseña},
+        editar = DB.QueryFirstOrDefault<Registro>(SP, new {Nombre_usuario = Nombre,  Apellido_usuario = Apellido, Email = Email, Contrasena = Contrasena},
         commandType: CommandType.StoredProcedure);
     }
     return editar;
