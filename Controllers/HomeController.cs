@@ -73,13 +73,6 @@ public class HomeController : Controller
 
     public IActionResult VerificarContrasena(string Email, string Contrasena)
     {
-        if (string.IsNullOrEmpty(Contrasena)  || string.IsNullOrEmpty(Email) )
-        {
-            ViewBag.Error = "Se deben completar todos los campos";
-            return RedirectToAction("Index");
-        }
-        else
-        {
             Registro verificar = BD.IniciarSesion(Email, Contrasena);
         
             if (verificar != null)
@@ -91,12 +84,12 @@ public class HomeController : Controller
             }
             else
             {
-
-
+             ViewBag.Error = "El usuario o la contraseña seleccionados no son correctos";
             }
+                    ViewBag.Casas = BD.TraerCasas();
 
-            return RedirectToAction("Index");
-        }
+            return View("Index");
+        
     }
 
     public Casa AjaxFiltros(string Nombre, string Direccion, float Precio, bool Pileta, bool Parrilla, int CantAmb, bool Balcon)

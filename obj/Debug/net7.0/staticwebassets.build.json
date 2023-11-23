@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "m3gaYLtj3+3wr2z8rQHjrlsmltFz3MeyVKNcrzffK2s=",
+  "Hash": "TtJ/6TKIz38oiMImps1Cl0IvXBk3l38hDWAourd0KIM=",
   "Source": "Tp11ProyectoIntegral",
   "BasePath": "_content/Tp11ProyectoIntegral",
   "Mode": "Default",
@@ -51,12 +51,12 @@
       "OriginalItemSpec": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Tp11ProyectoIntegral.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\bd\\2211.sql",
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\bd\\2311.sql",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
       "BasePath": "_content/Tp11ProyectoIntegral",
-      "RelativePath": "bd/2211.sql",
+      "RelativePath": "bd/2311.sql",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -65,7 +65,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\bd\\2211.sql"
+      "OriginalItemSpec": "wwwroot\\bd\\2311.sql"
+    },
+    {
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\bd\\historial bd\\2211.sql",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+      "BasePath": "_content/Tp11ProyectoIntegral",
+      "RelativePath": "bd/historial bd/2211.sql",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\bd\\historial bd\\2211.sql"
     },
     {
       "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\bd\\historial bd\\bdcorregido.sql",

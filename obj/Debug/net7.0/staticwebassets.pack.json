@@ -13,12 +13,16 @@
       "PackagePath": "staticwebassets\\Imagenes\\Telefono.png"
     },
     {
-      "Id": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\bd\\2211.sql",
-      "PackagePath": "staticwebassets\\bd\\2211.sql"
+      "Id": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\bd\\2311.sql",
+      "PackagePath": "staticwebassets\\bd\\2311.sql"
     },
     {
       "Id": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\bd\\QueryTP11.sql",
       "PackagePath": "staticwebassets\\bd\\QueryTP11.sql"
+    },
+    {
+      "Id": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\bd\\historial bd\\2211.sql",
+      "PackagePath": "staticwebassets\\bd\\historial bd\\2211.sql"
     },
     {
       "Id": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\bd\\historial bd\\BDtp11.sql",
