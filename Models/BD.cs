@@ -3,9 +3,9 @@ using System.Data;
 using Dapper;
 
 public static class BD {
-    private static string _connectionString = @"Server=localhost; DataBase=TP11Integral; Trusted_Connection=True;";
+    private static string _connectionString = @"Server=DESKTOP-PPCLIMN\SQLEXPRESS; DataBase=TP11Integral; Trusted_Connection=True;";
 
-public static Registro Usuario;
+public static Registro Usuario = null;
 public static Registro IniciarSesion(string Email1, string Contrasena)
 {
     Registro iniciar = null;

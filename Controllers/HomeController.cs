@@ -54,8 +54,9 @@ public class HomeController : Controller
         return View();
     }
 
-   public IActionResult EditarPerfil()
+   public IActionResult Perfil()
     {
+        ViewBag.Perfil = BD.Usuario;
         return View();
     }
 
@@ -63,12 +64,6 @@ public class HomeController : Controller
     {
         BD.EditarPerfil( Nombre,  Apellido,  Email,  Contrasena,  Telefono, FotoPerfil);
         return View();
-    }
-
-    public Registro DetallesAjaxLogin (string Email, string Contrasena)
-    {
-        ViewBag.usu = BD.IniciarSesion(Email, Contrasena);
-        return ViewBag.usu;
     }
 
     public IActionResult VerificarContrasena(string Email, string Contrasena)

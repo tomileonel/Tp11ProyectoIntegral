@@ -23,18 +23,43 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            @if (BD.Usuario != null)
+                              {
+                               <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Favoritos">Favoritos</a>
+                              }
                         </li>
                         <li class="nav-item">
-                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#IniciarSesion">Launch demo modal</button>
+                            @if (true)//preguntarle a leo como saber en que view esta el usuario
+                                {
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Filtrar">Filtros</button>
+                                }
+                                
                         </li>
-                        <li>
-                            @if (BD.Usuario != null)
-                            {
-                              <h2>@BD.Usuario.Nombre_usuario</h2>
-                            }
+@if (BD.Usuario != null)
+{
+    @if (BD.Usuario.FotoDePerfil != null)
+    {
+        <a asp-action="Perfil" asp-controller="Home">
+            <img src="@BD.Usuario.FotoDePerfil">
+        </a>
+    }
+    else
+    {
+        <a asp-action="Perfil" asp-controller="Home">
+            <img src="https://campus.ort.edu.ar/static/images/avatar.gif">
+        </a>
+    }
+    <a asp-action="Perfil" asp-controller="Home">@BD.Usuario.Nombre_usuario</a>
+    <a asp-action="Perfil" asp-controller="Home">@BD.Usuario.Apellido_usuario</a>
+}
+else
+{
+    <li class="nav-item">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#IniciarSesion">Iniciar sesión</button>
+    </li>
+}
+                            
                         </li>
-                        
                     </ul>
                 </div>
             </div>
@@ -82,7 +107,7 @@
           <button type="submit" class="btn btn-primary" id="BotonLogin" onclick="">Ingresar</button>
         </div>
         <div class="form-group">
-          <a href="#" id=""></a>
+          <a asp-action="Registro" asp-controller="Home">No tenes cuenta?, Regitrate</a>
         </div>
       </form>
       </div>
@@ -94,6 +119,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
+
        <form Action='@Url.Action("VerificarContrasena", "Home")'>
         <div class="form-group">
           <div id="Email">Email</div>
@@ -105,9 +131,6 @@
         </div>
         <div class="form-group">
           <button type="submit" class="btn btn-primary" id="BotonLogin" onclick="">Ingresar</button>
-        </div>
-        <div class="form-group">
-          <a href="#" id=""></a>
         </div>
       </form>
       </div>

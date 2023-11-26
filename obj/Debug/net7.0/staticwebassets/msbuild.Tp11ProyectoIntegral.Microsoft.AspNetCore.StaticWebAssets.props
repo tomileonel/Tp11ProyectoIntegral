@@ -144,6 +144,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagenes\BlueStacks10Installer_10.5.0.1016_native_7cab44eb5ee728e20e8d97e0be9971b3_MzsxNSwwOzUsMTsxNSw0OzE1.exe))">
+      <SourceType>Package</SourceType>
+      <SourceId>Tp11ProyectoIntegral</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Tp11ProyectoIntegral</BasePath>
+      <RelativePath>Imagenes/BlueStacks10Installer_10.5.0.1016_native_7cab44eb5ee728e20e8d97e0be9971b3_MzsxNSwwOzUsMTsxNSw0OzE1.exe</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagenes\BlueStacks10Installer_10.5.0.1016_native_7cab44eb5ee728e20e8d97e0be9971b3_MzsxNSwwOzUsMTsxNSw0OzE1.exe))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagenes\Email.PNG))">
       <SourceType>Package</SourceType>
       <SourceId>Tp11ProyectoIntegral</SourceId>
@@ -159,6 +175,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagenes\Email.PNG))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagenes\scoped_dir7940_870424335\BlueStacks10Installer_10.5.0.1016_native_7cab44eb5ee728e20e8d97e0be9971b3_MzsxNSwwOzUsMTsxNSw0OzE1.exe))">
+      <SourceType>Package</SourceType>
+      <SourceId>Tp11ProyectoIntegral</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Tp11ProyectoIntegral</BasePath>
+      <RelativePath>Imagenes/scoped_dir7940_870424335/BlueStacks10Installer_10.5.0.1016_native_7cab44eb5ee728e20e8d97e0be9971b3_MzsxNSwwOzUsMTsxNSw0OzE1.exe</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagenes\scoped_dir7940_870424335\BlueStacks10Installer_10.5.0.1016_native_7cab44eb5ee728e20e8d97e0be9971b3_MzsxNSwwOzUsMTsxNSw0OzE1.exe))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Imagenes\Telefono.png))">
       <SourceType>Package</SourceType>
