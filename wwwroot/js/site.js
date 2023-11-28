@@ -19,4 +19,33 @@ function IniciarSesion(Email, Contraseña)
      )   
 }
 
+$(document).ready(function() {
+
+    $("#form-filtro").on("change", function() {
+  
+      var pais = $("#pais").val();
+      var precio = $("#precio").val();
+      var pileta = $("#pileta").is(":checked");
+      var parrilla = $("#parrilla").is(":checked");
+      var cantidad_ambientes = $("#cantidad_ambientes").val();
+      var balcon = $("#balcon").is(":checked");
+  
+      $.ajax({
+        url: "/filtrar",
+        type: "POST",
+        data: {
+          pais: pais,
+          precio: precio,
+          pileta: pileta,
+          parrilla: parrilla,
+          cantidad_ambientes: cantidad_ambientes,
+          balcon: balcon
+        },
+        success: function(data) {
+          $("#resultados").html(data);
+        }
+      });
+    });
+  
+  });
 
