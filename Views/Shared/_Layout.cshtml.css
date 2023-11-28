@@ -8,7 +8,7 @@ a.navbar-brand {
 }
 
 a {
-  color: #0077cc;
+  color: #ff004c;
 }
 
 .btn-primary {
@@ -40,9 +40,75 @@ button.accept-policy {
 }
 
 .footer {
-  position: absolute;
+
   bottom: 0;
   width: 100%;
   white-space: nowrap;
   line-height: 60px;
+}
+/*modal*/
+
+.modal-dialog {
+  max-width: 400px;
+}
+
+.modal-content {
+  background-color: #d8d9ff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.modal-header {
+  background-color: #d6dbdf;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin: 15px;
+}
+
+#Email,
+#Contraseña {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+}
+
+#BotonLogin {
+  background-color: #1cb35c;
+  color: #fff;
+  padding: 5px 24px;
+}
+
+#BotonLogin:hover {
+  background-color: #27ae60;
+}
+
+
+.filtro-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.filtro-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.filtro-select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
 }

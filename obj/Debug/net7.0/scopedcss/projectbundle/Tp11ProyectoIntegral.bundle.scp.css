@@ -9,7 +9,7 @@ a.navbar-brand[b-5y3t2bk56r] {
 }
 
 a[b-5y3t2bk56r] {
-  color: #0077cc;
+  color: #ff004c;
 }
 
 .btn-primary[b-5y3t2bk56r] {
@@ -41,9 +41,75 @@ button.accept-policy[b-5y3t2bk56r] {
 }
 
 .footer[b-5y3t2bk56r] {
-  position: absolute;
+
   bottom: 0;
   width: 100%;
   white-space: nowrap;
   line-height: 60px;
+}
+/*modal*/
+
+.modal-dialog[b-5y3t2bk56r] {
+  max-width: 400px;
+}
+
+.modal-content[b-5y3t2bk56r] {
+  background-color: #d8d9ff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.modal-header[b-5y3t2bk56r] {
+  background-color: #d6dbdf;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group[b-5y3t2bk56r] {
+  margin: 15px;
+}
+
+#Email[b-5y3t2bk56r],
+#Contraseña[b-5y3t2bk56r] {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[b-5y3t2bk56r] {
+  width: 100%;
+  padding: 8px;
+}
+
+#BotonLogin[b-5y3t2bk56r] {
+  background-color: #1cb35c;
+  color: #fff;
+  padding: 5px 24px;
+}
+
+#BotonLogin:hover[b-5y3t2bk56r] {
+  background-color: #27ae60;
+}
+
+
+.filtro-title[b-5y3t2bk56r] {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.filtro-label[b-5y3t2bk56r] {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.filtro-select[b-5y3t2bk56r] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
 }

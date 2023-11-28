@@ -2,12 +2,18 @@
     ViewData["Title"] = "Registro";
 }
 
-<h2>Registro</h2>
 
-<form action="RegistroCompleto" method="post">
-  <input type="text" name="Nombre" placeholder="Nombre">
-  <input type="text" name="Apellido" placeholder="Apellido">
-  <input type="email" name="Email" placeholder="Email">
-  <input type="password" name="Contrasena" placeholder="Contraseña">
-  <input type="submit" value="Registrar">
-</form>
+        <div class="container">
+            <h2>Registrese aqui</h2>
+            <form action="RegistroCompleto" method="post">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="text" name="apellido" placeholder="Apellido" required>
+                <input type="tel" name="tel" placeholder="+11" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="submit" value="Registrese">
+            </form>
+            <div class="tieneaccount">
+                <p>Tienes cuenta? <a asp-area="" asp-controller="Home" asp-action="Index">Inicie sesion</a></p>
+            </div>
+        </div>
