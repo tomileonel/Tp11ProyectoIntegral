@@ -3,43 +3,9 @@
 }
 <h1>@ViewBag.Error</h1>
 
-<div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-  <label class="form-check-label" for="flexCheckDefault">
-    Pileta
-  </label>
-</div>
-
-
-
-<div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-  <label class="form-check-label" for="flexCheckDefault">
-   Parrilla  
-</label>
-</div>
-
-<div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-  <label class="form-check-label" for="flexCheckDefault">
-    Balcón
-  </label>
-</div>
-
-<p>Cantidad de ambientes</p>
-<select class="form-select" aria-label="Default select example">
-  <option selected>Todas</option>
-  <option value="1">1</option>
-  <option value="2">2</option>
-  <option value="3">3</option>
-  <option value="4">4</option>
-</select>
-
-
-
 @foreach (Casa casa in ViewBag.Casas)
 {
-    <div class="card" style="width: 18rem;">
+    <div class="card" id= "divCasa" style="width: 18rem;">
   <img src='@casa.FotoCasa' class="card-img-top" >
   <div class="card-body">
     <h2 class="card-title">@casa.Nombre_casa</h2>

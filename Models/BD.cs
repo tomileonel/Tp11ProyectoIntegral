@@ -43,16 +43,16 @@ public static Registro EditarPerfil (string Nombre, string Apellido, string Emai
     return editar;
 }
 
-public static List<Casa> BuscarCasa(string Nombre, string Direccion, float Precio, bool Pileta, bool Parrilla, int CantAmb, bool Balcon)
+public static List<Casa> BuscarCasa(string Direccion, float Precio, bool Pileta, bool Parrilla, int CantAmb, bool Balcon)
 {
-    List<Casa> buscar = null;
-    using (SqlConnection DB = new SqlConnection(_connectionString))
-    {
-        string SP = "BuscarCasa";
-        buscar = DB.Query<Casa>(SP, new {Nombre_casa = Nombre, Direccion_casa = Direccion, Precio = Precio, Pileta = Pileta, Parrilla = Parrilla, Cantidad_ambientes = CantAmb, Balcon = Balcon},
-        commandType: CommandType.StoredProcedure).ToList();
-    }
-    return buscar;
+  List<Casa> buscar = null;
+  using (SqlConnection DB = new SqlConnection(_connectionString))
+  {
+    string SP = "BuscarCasa";
+    buscar = DB.Query<Casa>(SP, new { Direccion_casa = Direccion, Precio = Precio, Pileta = Pileta, Parrilla = Parrilla, Cantidadambientes = CantAmb, Balcon = Balcon},
+    commandType: CommandType.StoredProcedure).ToList();
+  }
+  return buscar;
 }
 
 public static List<Casa> TraerCasas()

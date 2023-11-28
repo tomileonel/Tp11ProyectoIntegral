@@ -29,7 +29,7 @@
                               }
                         </li>
                         <li class="nav-item">
-                            @if (true)//preguntarle a leo como saber en que view esta el usuario
+                            @if (ViewBag.Index != null)
                                 {
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Filtrar">Filtros</button>
                                 }
@@ -120,65 +120,62 @@ else
     <div class="modal-content">
       <div class="modal-header">
 
-        <h1>Filtro de casas</h1>
+<h1>Filtro de casas</h1>
 
-  <form action="" method="post" id="form-filtro">
+<form action="" method="post" id="form-filtro">
 
-    <div class="form-group">
-      <label for="pais">País</label>
-      <select id="pais" class="form-control">
-        <option value="">Seleccione un país</option>
-        <option value="argentina">Argentina</option>
-        <option value="brasil">Brasil</option>
-        <option value="chile">Chile</option>
-        <option value="colombia">Colombia</option>
-      </select>
-    </div>
-
-    <div class="form-group">
-      <label for="precio">Precio</label>
-      <select id="precio" class="form-control">
-        <option value="">Seleccione un rango de precio</option>
-        <option value="0-100000">0-100000</option>
-        <option value="100001-200000">100001-200000</option>
-        <option value="200001-300000">200001-300000</option>
-        <option value="300001-400000">300001-400000</option>
-      </select>
-    </div>
-
-    <div class="form-group">
-      <label for="pileta">Pileta</label>
-      <input type="checkbox" id="pileta" name="pileta" value="true">
-    </div>
-
-    <div class="form-group">
-      <label for="parrilla">Parrilla</label>
-      <input type="checkbox" id="parrilla" name="parrilla" value="true">
-    </div>
-
-    <div class="form-group">
-      <label for="cantidad_ambientes">Cantidad de ambientes</label>
-      <select id="cantidad_ambientes" class="form-control">
-        <option value="">Seleccione una cantidad</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-      </select>
-    </div>
-
-    <div class="form-group">
-      <label for="balcon">Balcón</label>
-      <input type="checkbox" id="balcon" name="balcon" value="true">
-    </div>
-
-  </form>
-      </div>
-    </div>
+  <div class="form-group">
+    <label for="pais">País</label>
+    <select id="pais" class="form-control">
+      <option value="">Seleccione un país</option>
+      <option value="argentina">Argentina</option>
+      <option value="brasil">Brasil</option>
+      <option value="chile">Chile</option>
+      <option value="colombia">Colombia</option>
+    </select>
   </div>
-</div>
 
+  <div class="form-group">
+    <label for="precio">Precio</label>
+    <select id="precio" class="form-control">
+      <option value="">Seleccione un rango de precio</option>
+      <option value="0-100000">0-100000</option>
+      <option value="100001-200000">100001-200000</option>
+      <option value="200001-300000">200001-300000</option>
+      <option value="300001-400000">300001-400000</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="cantidad_ambientes">Cantidad de ambientes</label>
+    <select id="cantidad_ambientes" class="form-control">
+      <option value="">Seleccione una cantidad</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="pileta">Pileta</label>
+    <input type="checkbox" id="pileta" name="pileta" value="true">
+  </div>
+
+  <div class="form-group">
+    <label for="parrilla">Parrilla</label>
+    <input type="checkbox" id="parrilla" name="parrilla" value="true">
+  </div>
+
+  <div class="form-group">
+    <label for="balcon">Balcón</label>
+    <input type="checkbox" id="balcon" name="balcon" value="true">
+  </div>
+
+<button type="submit" class="btn btn-primary" onclick="buscar()">Buscar</button>
+
+</form>
 
 </body>
 </html>
