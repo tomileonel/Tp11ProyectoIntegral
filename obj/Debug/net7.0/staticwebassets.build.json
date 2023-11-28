@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "X3MmcDMLW1ukEGa9T0C2CDePldhkHVYo4SubXv47XQc=",
+=======
+  "Hash": "o+V2QsZBMzCvsck4/YJUQoJ+NOMqI8Jv1cELRBPbBfA=",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
   "Source": "Tp11ProyectoIntegral",
   "BasePath": "_content/Tp11ProyectoIntegral",
   "Mode": "Default",
@@ -10,17 +14,28 @@
     {
       "Name": "Tp11ProyectoIntegral\\wwwroot",
       "Source": "Tp11ProyectoIntegral",
+<<<<<<< HEAD
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\obj\\Debug\\net7.0\\scopedcss\\bundle\\Tp11ProyectoIntegral.styles.css",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\obj\\Debug\\net7.0\\scopedcss\\bundle\\Tp11ProyectoIntegral.styles.css",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "Tp11ProyectoIntegral.styles.css",
       "AssetKind": "All",
@@ -31,6 +46,7 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\obj\\Debug\\net7.0\\scopedcss\\bundle\\Tp11ProyectoIntegral.styles.css"
     },
     {
@@ -38,6 +54,15 @@
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\obj\\Debug\\net7.0\\scopedcss\\bundle\\Tp11ProyectoIntegral.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Tp11ProyectoIntegral.bundle.scp.css",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "Tp11ProyectoIntegral.bundle.scp.css",
       "AssetKind": "All",
@@ -48,6 +73,7 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Tp11ProyectoIntegral.bundle.scp.css"
     },
     {
@@ -55,6 +81,15 @@
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "OriginalItemSpec": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Tp11ProyectoIntegral.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\bd\\2311.sql",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "bd/2311.sql",
       "AssetKind": "All",
@@ -68,10 +103,17 @@
       "OriginalItemSpec": "wwwroot\\bd\\2311.sql"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\bd\\historial bd\\2211.sql",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\bd\\historial bd\\2211.sql",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "bd/historial bd/2211.sql",
       "AssetKind": "All",
@@ -85,10 +127,17 @@
       "OriginalItemSpec": "wwwroot\\bd\\historial bd\\2211.sql"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\bd\\historial bd\\bdcorregido.sql",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\bd\\historial bd\\bdcorregido.sql",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "bd/historial bd/bdcorregido.sql",
       "AssetKind": "All",
@@ -102,10 +151,17 @@
       "OriginalItemSpec": "wwwroot\\bd\\historial bd\\bdcorregido.sql"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\bd\\historial bd\\bdscripttp11.sql",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\bd\\historial bd\\bdscripttp11.sql",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "bd/historial bd/bdscripttp11.sql",
       "AssetKind": "All",
@@ -119,10 +175,17 @@
       "OriginalItemSpec": "wwwroot\\bd\\historial bd\\bdscripttp11.sql"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\bd\\historial bd\\BDtp11.sql",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\bd\\historial bd\\BDtp11.sql",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "bd/historial bd/BDtp11.sql",
       "AssetKind": "All",
@@ -136,10 +199,17 @@
       "OriginalItemSpec": "wwwroot\\bd\\historial bd\\BDtp11.sql"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\bd\\historial bd\\QueryTP11.sql",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\bd\\historial bd\\QueryTP11.sql",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "bd/historial bd/QueryTP11.sql",
       "AssetKind": "All",
@@ -153,10 +223,17 @@
       "OriginalItemSpec": "wwwroot\\bd\\historial bd\\QueryTP11.sql"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\bd\\QueryTP11.sql",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\bd\\QueryTP11.sql",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "bd/QueryTP11.sql",
       "AssetKind": "All",
@@ -170,10 +247,17 @@
       "OriginalItemSpec": "wwwroot\\bd\\QueryTP11.sql"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\css\\site.css",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\css\\site.css",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -187,10 +271,17 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\favicon.ico",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\favicon.ico",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -204,10 +295,17 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\Imagenes\\BlueStacks10Installer_10.5.0.1016_native_7cab44eb5ee728e20e8d97e0be9971b3_MzsxNSwwOzUsMTsxNSw0OzE1.exe",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\Imagenes\\BlueStacks10Installer_10.5.0.1016_native_7cab44eb5ee728e20e8d97e0be9971b3_MzsxNSwwOzUsMTsxNSw0OzE1.exe",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "Imagenes/BlueStacks10Installer_10.5.0.1016_native_7cab44eb5ee728e20e8d97e0be9971b3_MzsxNSwwOzUsMTsxNSw0OzE1.exe",
       "AssetKind": "All",
@@ -221,10 +319,17 @@
       "OriginalItemSpec": "wwwroot\\Imagenes\\BlueStacks10Installer_10.5.0.1016_native_7cab44eb5ee728e20e8d97e0be9971b3_MzsxNSwwOzUsMTsxNSw0OzE1.exe"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\Imagenes\\Email.PNG",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\Imagenes\\Email.PNG",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "Imagenes/Email.PNG",
       "AssetKind": "All",
@@ -238,10 +343,17 @@
       "OriginalItemSpec": "wwwroot\\Imagenes\\Email.PNG"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\Imagenes\\scoped_dir7940_870424335\\BlueStacks10Installer_10.5.0.1016_native_7cab44eb5ee728e20e8d97e0be9971b3_MzsxNSwwOzUsMTsxNSw0OzE1.exe",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\Imagenes\\scoped_dir7940_870424335\\BlueStacks10Installer_10.5.0.1016_native_7cab44eb5ee728e20e8d97e0be9971b3_MzsxNSwwOzUsMTsxNSw0OzE1.exe",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "Imagenes/scoped_dir7940_870424335/BlueStacks10Installer_10.5.0.1016_native_7cab44eb5ee728e20e8d97e0be9971b3_MzsxNSwwOzUsMTsxNSw0OzE1.exe",
       "AssetKind": "All",
@@ -255,10 +367,17 @@
       "OriginalItemSpec": "wwwroot\\Imagenes\\scoped_dir7940_870424335\\BlueStacks10Installer_10.5.0.1016_native_7cab44eb5ee728e20e8d97e0be9971b3_MzsxNSwwOzUsMTsxNSw0OzE1.exe"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\Imagenes\\Telefono.png",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\Imagenes\\Telefono.png",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "Imagenes/Telefono.png",
       "AssetKind": "All",
@@ -272,10 +391,17 @@
       "OriginalItemSpec": "wwwroot\\Imagenes\\Telefono.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\js\\site.js",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\js\\site.js",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -289,10 +415,17 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -306,10 +439,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -323,10 +463,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -340,10 +487,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -357,10 +511,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -374,10 +535,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -391,10 +559,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -408,10 +583,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -425,10 +607,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -442,10 +631,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -459,10 +655,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -476,10 +679,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -493,10 +703,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -510,10 +727,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -527,10 +751,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -544,10 +775,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -561,10 +799,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -578,10 +823,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -595,10 +847,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -612,10 +871,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -629,10 +895,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -646,10 +919,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -663,10 +943,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -680,10 +967,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -697,10 +991,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -714,10 +1015,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -731,10 +1039,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -748,10 +1063,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -765,10 +1087,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -782,10 +1111,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -799,10 +1135,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -816,10 +1159,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -833,10 +1183,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -850,10 +1207,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -867,10 +1231,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -884,10 +1255,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -901,10 +1279,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -918,10 +1303,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -935,10 +1327,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -952,10 +1351,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -969,10 +1375,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -986,10 +1399,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1003,10 +1423,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1020,10 +1447,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1037,10 +1471,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1054,10 +1495,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1071,10 +1519,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1088,10 +1543,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -1105,10 +1567,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1122,10 +1591,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1139,10 +1615,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1156,10 +1639,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1173,10 +1663,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1190,10 +1687,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1207,10 +1711,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1224,10 +1735,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1241,10 +1759,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
       "BasePath": "_content/Tp11ProyectoIntegral",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",

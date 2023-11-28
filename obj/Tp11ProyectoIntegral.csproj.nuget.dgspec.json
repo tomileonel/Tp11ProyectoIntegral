@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\Tp11ProyectoIntegral.csproj": {}
   },
   "projects": {
@@ -12,12 +13,29 @@
         "projectPath": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\Tp11ProyectoIntegral.csproj",
         "packagesPath": "C:\\Users\\47807061\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\47807061\\Downloads\\x\\Tp11ProyectoIntegral\\obj\\",
+=======
+    "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\Tp11ProyectoIntegral.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\Tp11ProyectoIntegral.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\Tp11ProyectoIntegral.csproj",
+        "projectName": "Tp11ProyectoIntegral",
+        "projectPath": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\Tp11ProyectoIntegral.csproj",
+        "packagesPath": "C:\\Users\\47349708\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\obj\\",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\47807061\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\47349708\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> c25334bbe0cf465e9c64e278105266d96a5972cc
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

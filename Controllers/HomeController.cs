@@ -16,13 +16,14 @@ public class HomeController : Controller
     public IActionResult Index()
     {
         ViewBag.Casas = BD.TraerCasas();
+        ViewBag.Index = true;
         return View();
     }
 
-  public IActionResult Buscar(string Nombre, string Direccion, float Precio, bool Pileta, bool Parrilla, int CantAmb, bool Balcon)
+  public List<Casa> Buscar(string Direccion, float Precio, bool Pileta, bool Parrilla, int CantAmb, bool Balcon)
     {
-        ViewBag.Casas = BD.BuscarCasa(Nombre, Direccion, Precio, Pileta, Parrilla, CantAmb, Balcon);
-        return View("Index");
+        List<Casa> CasasBuscadas = BD.BuscarCasa(Direccion, Precio, Pileta, Parrilla, CantAmb, Balcon);
+        return CasasBuscadas;
     }
 
 
@@ -87,9 +88,9 @@ public class HomeController : Controller
         
     }
 
-    public Casa AjaxFiltros(string Nombre, string Direccion, float Precio, bool Pileta, bool Parrilla, int CantAmb, bool Balcon)
+    public Casa AjaxFiltros(string Direccion, float Precio, bool Pileta, bool Parrilla, int CantAmb, bool Balcon)
     {
-        ViewBag.Filtros = BD.BuscarCasa( Nombre,  Direccion,  Precio,  Pileta,  Parrilla,  CantAmb,  Balcon);
+        ViewBag.Filtros = BD.BuscarCasa(Direccion,  Precio,  Pileta,  Parrilla,  CantAmb,  Balcon);
         return ViewBag.Filtros;
     }
         
