@@ -102,10 +102,31 @@ public static List<Favorito> GuardarFavoritos(int idUsu, int idCasa)
     using (SqlConnection DB = new SqlConnection(_connectionString))
     {
         string SP = "GuardarFavoritos";
-        guardarFav = DB.Query<Favorito>(SP, new {IDUsuario = idUsu, IdCasa = idCasa},
-        commandType: CommandType.StoredProcedure).ToList(); 
+        guardarFav = DB.Query<Favorito>(SP, new { IdUser = idUsu, IdCasa = idCasa },
+            commandType: CommandType.StoredProcedure).ToList();
     }
     return guardarFav;
+}
+
+public static bool EsFavorito(int idUsuario, int idCasa)
+{
+    using (SqlConnection DB = new SqlConnection(_connectionString))
+    {
+        string SP = "EsFavorito";
+        var parameters = new { IDUsuario = idUsuario, IdCasa = idCasa };
+        bool result = DB.QueryFirstOrDefault<bool>(SP, parameters, commandType: CommandType.StoredProcedure);
+
+        return result;
+    }
+}
+
+public static void SacarDeFavoritos(int idUsu, int idCasa)
+{
+    using (SqlConnection DB = new SqlConnection(_connectionString))
+    {
+        string SP = "SacarDeFavoritos";
+        DB.Execute(SP, new { IdUser = idUsu, IdCasa = idCasa }, commandType: CommandType.StoredProcedure);
+    }
 }
 
 public static List<Favorito> VerFavoritos(int idUsu)
@@ -131,6 +152,8 @@ public static Casa TraerUnaCasa(int idCasa)
     }
     return unaCasa;
 }
+
+
 
 // public static List<Casa> TienePileta(bool pileta)
 // {

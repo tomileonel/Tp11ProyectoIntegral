@@ -25,3 +25,12 @@ body {
   width: 10px;
   height: 10px;
 }
+
+#corazon {
+  color: rgb(65, 65, 65); 
+  cursor: pointer;
+}
+
+.favorito {
+  color: #ff0000 !important; 
+}

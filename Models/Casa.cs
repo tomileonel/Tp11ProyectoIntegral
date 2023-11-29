@@ -9,4 +9,6 @@ public class Casa
     public int Cantidad_ambientes {get; set;} 
     public bool Balcon {get; set;} 
     public string FotoCasa {get; set;}
+
+    public bool EsFavorito{get; set;}
 }

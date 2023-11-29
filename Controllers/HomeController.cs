@@ -16,7 +16,15 @@ public class HomeController : Controller
     public IActionResult Index()
     {
         ViewBag.Casas = BD.TraerCasas();
+        ViewBag.Perfil = BD.Usuario;
+        if(ViewBag.Perfil != null){
+            foreach (var casa in ViewBag.Casas)
+    {
+        casa.EsFavorito = BD.EsFavorito(BD.Usuario.IDUsuario, casa.IDCasa);
+    }
+    }
         ViewBag.Index = true;
+        
         return View();
     }
 
@@ -59,6 +67,29 @@ public class HomeController : Controller
         BD.CerrarSesion();
         return RedirectToAction("Index");
     }
+
+public IActionResult ToggleFavorito(int idCasa)
+{
+
+        if (BD.Usuario == null)
+        {
+            Console.WriteLine("BD.Usuario es nulo.");
+        }
+
+        bool estaEnFavoritos = BD.EsFavorito(BD.Usuario.IDUsuario, idCasa);
+
+        if (estaEnFavoritos)
+        {
+            BD.SacarDeFavoritos(BD.Usuario.IDUsuario, idCasa);
+        }
+        else
+        {
+            BD.GuardarFavoritos(BD.Usuario.IDUsuario, idCasa);
+        }
+
+        return Json(new { success = true, estaEnFavoritos = !estaEnFavoritos });
+}
+
 
 
     public IActionResult EditarPerfil(string Nombre, string Apellido, string Email, string Contrasena, int Telefono, string FotoPerfil)
@@ -125,6 +156,8 @@ public IActionResult AjaxFiltros(string Direccion, float Precio, bool Pileta, bo
     
 
 }
+
+
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
 

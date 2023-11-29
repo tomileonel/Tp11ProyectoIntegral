@@ -149,6 +149,33 @@ ALTER PROCEDURE GuardarFavoritos
 	GO
 EXEC GuardarFavoritos
 
+--SacarDeFavoritos
+	Create PROCEDURE SacarDeFavoritos
+@IdUser int,
+@IdCasa int
+	AS
+	BEGIN 
+		Delete from Favorito where IDUsuario = @IdUser and IDCasa = @IdCasa
+	END 
+	GO
+EXEC SacarDeFavoritos
+
+CREATE PROCEDURE EsFavorito
+    @IDUsuario INT,
+    @IdCasa INT
+AS
+BEGIN
+    DECLARE @EsFavorito BIT;
+
+    SELECT @EsFavorito = CASE WHEN EXISTS (
+        SELECT 1
+        FROM Favorito
+        WHERE IDUsuario = @IDUsuario AND IDCasa = @IdCasa
+    ) THEN 1 ELSE 0 END;
+
+    SELECT @EsFavorito AS EsFavorito;
+END
+
 --VerFavoritos(idUsuario)
 ALTER PROCEDURE VerFavoritos
 @IdUser int

@@ -73,3 +73,30 @@ function IniciarSesion(Email, Contraseña)
 
     });
 } 
+
+
+function corazonC(idCasa) {
+    var corazon = idCasa;
+
+    $.ajax({
+        type: 'POST',
+        url: '/Home/ToggleFavorito',
+        data: { idCasa: idCasa },
+        dataType: 'JSON',
+        success: function (response) {
+
+            if (response.success) {
+                console.log(response.estaEnFavoritos); 
+                
+
+                if (response.estaEnFavoritos) {
+                    var element = document.getElementById(corazon);
+                    element.classList.add('favorito');
+                } else {
+                    var element = document.getElementById(corazon);
+                    element.classList.remove('favorito');
+                }
+            }
+        }.bind(corazon)
+    });
+}
