@@ -37,7 +37,7 @@ alter PROCEDURE EditarPerfil
 AS
 	BEGIN
 UPDATE Registro
-SET Nombre_usuario = @nombreU, Apellido_usuario = @apellidoU,Telefono = @telefono, FotoDePerfil = @foto
+SET Nombre_usuario = @nombreU, Apellido_usuario = @apellidoU,Telefono = @telefono, FotoDePerfil = @foto Contrasena = @contrasena
 Where Email = @gmail
 	END 
 	GO

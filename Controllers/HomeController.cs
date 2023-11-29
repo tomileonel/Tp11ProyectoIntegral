@@ -16,6 +16,7 @@ public class HomeController : Controller
     public IActionResult Index()
     {
         ViewBag.Casas = BD.TraerCasas();
+        ViewBag.Index = true;
         return View();
     }
 
@@ -60,10 +61,45 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult ActualizarPerfil(string Nombre, string Apellido, string Email, string Contrasena, int Telefono, string FotoPerfil)
+   public IActionResult CerrarSesion()
     {
-        BD.EditarPerfil( Nombre,  Apellido,  Email,  Contrasena,  Telefono, FotoPerfil);
+        BD.CerrarSesion();
+        return RedirectToAction("Index");
+    }
+
+
+    public IActionResult EditarPerfil(string Nombre, string Apellido, string Email, string Contrasena, int Telefono, string FotoPerfil)
+    {
         return View();
+    }
+
+    public IActionResult ActualizarPerfil(string Nombre, string Apellido, string Contrasena, int Telefono, string FotoPerfil)
+    {
+        if(Nombre == null){
+       Nombre = BD.Usuario.Nombre_usuario;
+        }
+            if (Apellido == null)
+    {
+        Apellido = BD.Usuario.Apellido_usuario;
+    }
+
+    if (Contrasena == null)
+    {
+        Contrasena = BD.Usuario.Contrasena;
+    }
+
+    if(Telefono != Math.Max(0, Telefono)){
+Telefono = BD.Usuario.Telefono;
+    }
+
+    if (FotoPerfil == null)
+    {
+        FotoPerfil = BD.Usuario.FotoDePerfil;
+    }
+    
+        BD.EditarPerfil( Nombre,  Apellido,  BD.Usuario.Email,  Contrasena,  Telefono, FotoPerfil);
+        ViewBag.Perfil = BD.Usuario;
+        return View("Perfil");
     }
 
     public IActionResult VerificarContrasena(string Email, string Contrasena)

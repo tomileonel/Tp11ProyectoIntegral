@@ -31,15 +31,19 @@ public static Registro Registrarte (string Nombre, string Apellido, string Email
     return registrar;
 }
 
+public static void CerrarSesion(){
+Usuario = null;
+}
 public static Registro EditarPerfil (string Nombre, string Apellido, string Email, string Contrasena, int Telefono, string FotoPerfil)
 {
     Registro editar = null;
     using (SqlConnection DB = new SqlConnection(_connectionString))
     {
         string SP = "EditarPerfil";
-        editar = DB.QueryFirstOrDefault<Registro>(SP, new {Nombre_usuario = Nombre,  Apellido_usuario = Apellido, Email = Email, Contrasena = Contrasena},
+        editar = DB.QueryFirstOrDefault<Registro>(SP, new {nombreU= Nombre,  apellidoU = Apellido, gmail = Email, Contrasena = Contrasena, telefono = Telefono, foto = FotoPerfil},
         commandType: CommandType.StoredProcedure);
     }
+    Usuario = IniciarSesion(Email,Contrasena);
     return editar;
 }
 

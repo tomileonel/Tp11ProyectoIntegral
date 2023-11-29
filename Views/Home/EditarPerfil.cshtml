@@ -1,21 +1,24 @@
 @{
     ViewData["Title"] = "Editarperfil";
 }
-<form>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Nombre de Usuario</label>
-    <input type="nombre" class="form-control" id="nombre" >
-    <div id="emailHelp" class="form-text"></div>
-  </div>
-      <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Nuevo Email</label>
-    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-    <div id="emailHelp" class="form-text"></div>
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Nueva contraseña</label>
-    <input type="contraseña" class="form-control" id="contraseña">
-  </div>
 
-<a class="btn btn-EditarPerfil" href='@Url.Action("ActualizarPerfil", "Home")'>Actualizar perfil</a>
-</form>
+<h1>Editar Perfil</h1>
+  <form action="ActualizarPerfil" method="post">
+
+        <label for="Nombre">Nombre:</label>
+        <input type="text" id="Nombre" name="Nombre" ><br>
+
+        <label for="Apellido">Apellido:</label>
+        <input type="text" id="Apellido" name="Apellido" ><br>
+
+        <label for="Contrasena">Contraseña:</label>
+        <input type="password" id="Contrasena" name="Contrasena" ><br>
+
+        <label for="Telefono">Teléfono:</label>
+        <input type="tel" id="Telefono" name="Telefono" ><br>
+
+        <label for="FotoPerfil">Foto de Perfil (URL):</label>
+        <input type="text" id="FotoPerfil" name="FotoPerfil"  ><br>
+
+        <input type="submit" value="Actualizar Perfil">
+    </form>

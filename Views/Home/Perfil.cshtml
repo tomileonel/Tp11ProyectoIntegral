@@ -1,14 +1,31 @@
 @{
     ViewData["Title"] = "Perfil";
 }
-<img src = "@ViewBag.Foto"/>
-<h1>@ViewBag.NombreU</h1>
+@if (ViewBag.Perfil != null && ViewBag.Perfil.FotoDePerfil != null)
+{
+    <img src = "@ViewBag.Perfil.FotoDePerfil"/>
+}else{
+    <img src="https://campus.ort.edu.ar/static/images/avatar.gif">
+}
+<h1>@ViewBag.Perfil.Nombre_usuario @ViewBag.Perfil.Apellido_usuario</h1>
 <h4>Comprador</h4>
 
-<h2>Acerca de @ViewBag.NombreU</h2>
-<a class="btn btn-EditarPerfil" href='@Url.Action("EditarPerfil", "Home")'>Editar perfil</a>
-<img src = "/Imagenes/Email.PNG" />
-<h6>Email  @ViewBag.Email</h6>
+<h2>Acerca de @ViewBag.Perfil.Nombre_usuario @ViewBag.Perfil.Apellido_usuario </h2>
 
-<img src = "/Imagenes/Telefono.png" />
-<h6>N. de Telefono  @ViewBag.Telefono</h6>
+
+<img  class = "icon" src = "/Imagenes/Email.PNG" />
+<h6>Email  @ViewBag.Perfil.Email</h6>
+
+@if (ViewBag.Perfil.Telefono != 0)
+{
+  <img class = "icon" src = "/Imagenes/Telefono.png" />
+<h6>N. de Telefono  @ViewBag.Perfil.Telefono</h6>  
+}
+
+<a asp-area="" asp-controller="Home" asp-action="EditarPerfil">
+<button type="button" class="btn btn-primary" >Editar perfil </button>
+</a>
+
+<a asp-area="" asp-controller="Home" asp-action="CerrarSesion">
+<button type="button" class="btn btn-primary" >CerrarSesion</button>
+</a>
