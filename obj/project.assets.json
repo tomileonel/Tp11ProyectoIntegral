@@ -510,11 +510,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Desktop\\Tp11ProyectoIntegral\\Tp11ProyectoIntegral.csproj",
+      "projectUniqueName": "D:\\OneDrive\\Documentos\\Tp11ProyectoIntegral\\Tp11ProyectoIntegral.csproj",
       "projectName": "Tp11ProyectoIntegral",
-      "projectPath": "D:\\Desktop\\Tp11ProyectoIntegral\\Tp11ProyectoIntegral.csproj",
+      "projectPath": "D:\\OneDrive\\Documentos\\Tp11ProyectoIntegral\\Tp11ProyectoIntegral.csproj",
       "packagesPath": "C:\\Users\\Tomas\\.nuget\\packages\\",
-      "outputPath": "D:\\Desktop\\Tp11ProyectoIntegral\\obj\\",
+      "outputPath": "D:\\OneDrive\\Documentos\\Tp11ProyectoIntegral\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Tomas\\AppData\\Roaming\\NuGet\\NuGet.Config"
