@@ -19,33 +19,57 @@ function IniciarSesion(Email, Contraseña)
      )   
 }
 
-$(document).ready(function() {
 
-    $("#form-filtro").on("change", function() {
-  
-      var pais = $("#pais").val();
-      var precio = $("#precio").val();
-      var pileta = $("#pileta").is(":checked");
-      var parrilla = $("#parrilla").is(":checked");
-      var cantidad_ambientes = $("#cantidad_ambientes").val();
-      var balcon = $("#balcon").is(":checked");
-  
-      $.ajax({
-        url: "/filtrar",
+  function buscar() {
+    let cantidad_ambientes = $("#cantidad_ambientes").val();
+    let pais = $("#pais").val();
+    let precio = $("#precio").val();
+    let pileta = $("#pileta").is(":checked");
+    let parrilla = $("#parrilla").is(":checked");
+    let balcon = $("#balcon").is(":checked");
+
+    console.log("Direccion:", pais);
+    console.log("Precio:", precio);
+    console.log("Pileta:", pileta);
+    console.log("Parrilla:", parrilla);
+    console.log("CantAmb:", cantidad_ambientes);
+    console.log("Balcon:", balcon);
+
+    $.ajax({
+        url: "/Home/AjaxFiltros",
         type: "POST",
+        dataType: 'JSON',
         data: {
-          pais: pais,
-          precio: precio,
-          pileta: pileta,
-          parrilla: parrilla,
-          cantidad_ambientes: cantidad_ambientes,
-          balcon: balcon
-        },
-        success: function(data) {
-          $("#resultados").html(data);
-        }
-      });
-    });
-  
-  });
+          
+            Direccion: pais,
+            Precio: precio,
+            Pileta: pileta,
+            Parrilla: parrilla,
+            CantAmb: cantidad_ambientes,
+            Balcon: balcon
 
+        },
+        success: function (response) {
+
+                $("#divCasa").empty();
+                console.log(response)
+
+                for (var casa of response.data) {
+
+                    var txtCasa = "<div class=\"card\" style=\"width: 18rem;\"> \
+                                        <img src='" + casa.fotoCasa + "' class=\"card-img-top\" > \
+                                        <div class=\"card-body\"> \
+                                            <h2 class=\"card-title\">" + casa.nombre_casa + "</h2> \
+                                            <h4 class=\"card-title\">" + casa.direccion_casa + "</h4> \
+                                            <h4 class=\"card-title\">" + casa.precio + "</h4> \
+                                            <a href='/Home/Casa?IdCasa=" + casa.idCasa + "' class=\"btn btn-primary\">Alquilar</a> \
+                                        </div> \
+                                    </div>";
+                    $("#divCasa").append(txtCasa);
+
+                }
+            
+        }
+
+    });
+} 

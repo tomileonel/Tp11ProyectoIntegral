@@ -20,13 +20,6 @@ public class HomeController : Controller
         return View();
     }
 
-  public IActionResult Buscar(string Nombre, string Direccion, float Precio, bool Pileta, bool Parrilla, int CantAmb, bool Balcon)
-    {
-        ViewBag.Casas = BD.BuscarCasa(Nombre, Direccion, Precio, Pileta, Parrilla, CantAmb, Balcon);
-        return View("Index");
-    }
-
-
     public IActionResult Privacy()
     {
         return View();
@@ -123,12 +116,15 @@ Telefono = BD.Usuario.Telefono;
         
     }
 
-    public Casa AjaxFiltros(string Nombre, string Direccion, float Precio, bool Pileta, bool Parrilla, int CantAmb, bool Balcon)
-    {
-        ViewBag.Filtros = BD.BuscarCasa( Nombre,  Direccion,  Precio,  Pileta,  Parrilla,  CantAmb,  Balcon);
-        return ViewBag.Filtros;
-    }
-        
+public IActionResult AjaxFiltros(string Direccion, float Precio, bool Pileta, bool Parrilla, int CantAmb, bool Balcon)
+{
+
+        List<Casa> casasFiltradas = BD.BuscarCasa(Direccion, Precio, Pileta, Parrilla, CantAmb, Balcon);
+
+        return Json(new { success = true, data = casasFiltradas });
+    
+
+}
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
 

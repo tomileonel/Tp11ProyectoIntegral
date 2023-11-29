@@ -47,14 +47,15 @@ public static Registro EditarPerfil (string Nombre, string Apellido, string Emai
     return editar;
 }
 
-public static List<Casa> BuscarCasa(string Nombre, string Direccion, float Precio, bool Pileta, bool Parrilla, int CantAmb, bool Balcon)
+public static List<Casa> BuscarCasa(string direccion, float precio, bool pileta, bool parrilla, int cantAmb, bool balcon)
 {
     List<Casa> buscar = null;
     using (SqlConnection DB = new SqlConnection(_connectionString))
     {
         string SP = "BuscarCasa";
-        buscar = DB.Query<Casa>(SP, new {Nombre_casa = Nombre, Direccion_casa = Direccion, Precio = Precio, Pileta = Pileta, Parrilla = Parrilla, Cantidad_ambientes = CantAmb, Balcon = Balcon},
-        commandType: CommandType.StoredProcedure).ToList();
+    buscar = DB.Query<Casa>(SP, new { Direccion = direccion, Precio = precio, Pileta = pileta, Parrilla = parrilla, CantAmb = cantAmb, Balcon = balcon },
+    commandType: CommandType.StoredProcedure).ToList();
+
     }
     return buscar;
 }

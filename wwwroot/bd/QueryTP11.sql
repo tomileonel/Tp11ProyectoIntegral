@@ -46,7 +46,6 @@ EXEC EditarPerfil
 
 --BuscarCasa(todo de casa)
 CREATE PROCEDURE BuscarCasa
-@nombreCasa Varchar(50),
 @direccion Varchar(50),
 @precio Real,
 @pileta bit,
@@ -56,10 +55,6 @@ CREATE PROCEDURE BuscarCasa
 AS
 BEGIN
 
-IF @nombreCasa IS NOT NULL
-BEGIN
-	SET @nombreCasa = '%' + @nombreCasa + '%';
-END
 
 IF @direccion IS NOT NULL
 BEGIN
@@ -69,8 +64,7 @@ END
 SELECT *
 FROM Casa
 WHERE
-	(Nombre_casa LIKE @nombreCasa)
-	AND (Direccion_casa LIKE @direccion)
+	 (Direccion_casa LIKE @direccion)
 	AND (Cantidad_ambientes IS NULL OR Cantidad_ambientes >= @CantidadAmbientes)
 	AND (Precio IS NULL OR Precio >= @precio)
 	AND (Pileta Is null or Pileta = @pileta)
