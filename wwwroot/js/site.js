@@ -87,7 +87,7 @@ function corazonC(idCasa) {
 
             if (response.success) {
                 console.log(response.estaEnFavoritos); 
-                
+
 
                 if (response.estaEnFavoritos) {
                     var element = document.getElementById(corazon);
@@ -100,3 +100,53 @@ function corazonC(idCasa) {
         }.bind(corazon)
     });
 }
+//intento de reserva
+function enviarReserva() {
+    var anio = $('#anio').val();
+    var mes = $('#mes').val();
+    var semana = $('#semana').val();
+
+    $.ajax({
+        url: '/TuControlador/ReservarCasa',
+        type: 'POST',
+        contentType: 'application/json',
+        data: JSON.stringify({ Anio: anio, Mes: mes, Semana: semana }),
+        success: function (data) {
+        },
+        error: function (error) {
+            console.error('Error al enviar la solicitud:', error);
+        }
+    });
+}
+
+function cargarSemanasDisponibles() {
+    var idCasa = $('#idCasa').val(); 
+    var mes = $('#mes').val();
+    var anio = $('#anio').val();
+
+    $.ajax({
+        url: '/Home/ObtenerSemanasDisponibles',
+        type: 'GET',
+        data: { idCasa: idCasa, mes: mes, anio: anio },
+        success: function (semanasDisponibles) {
+            $('#semana').empty();
+            for (var i = 1; i <= 4; i++) {
+                var disabled = semanasDisponibles.indexOf(i) !== -1;
+            
+                $('#semana').append('<option value="' + i + '" ' + (disabled ? 'disabled' : '') + '>Semana ' + i + '</option>');
+            }
+
+            $('#semana').prop('disabled', false);
+        },
+        error: function (error) {
+            console.error('Error al cargar semanas disponibles:', error);
+            
+
+            
+        }
+    });
+}
+
+$('#idCasa, #mes, #anio').on('change', function () {
+    cargarSemanasDisponibles();
+});

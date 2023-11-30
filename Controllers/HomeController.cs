@@ -159,7 +159,14 @@ Telefono = BD.Usuario.Telefono;
             return View("Index");
         
     }
+// intento de reserva
+    public JsonResult ObtenerSemanasDisponibles(int idCasa, int mes, int anio)
+    {
+            Console.WriteLine($"IdCasa: {idCasa}, Mes: {mes}, Anio: {anio}");
 
+        List<int> semanasDisponibles = BD.ObtenerSemanasDisponibles(idCasa, mes, anio);
+        return Json(semanasDisponibles);
+    }
 public IActionResult AjaxFiltros(string Direccion, float Precio, bool Pileta, bool Parrilla, int CantAmb, bool Balcon)
 {
 

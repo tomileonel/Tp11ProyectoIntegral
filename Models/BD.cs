@@ -72,17 +72,7 @@ public static List<Casa> TraerCasas()
     return buscar;
 }
 
-public static List<Alquiler> ObtenerSemanasDisponibles(int idCasa, int mes, int anio)
-{
-    List<Alquiler> fechas = null;
-    using (SqlConnection DB = new SqlConnection(_connectionString))
-    {
-        string SP = "ObtenerSemanasDisponibles";
-        fechas = DB.Query<Alquiler>(SP, new {IDCasa = idCasa, Mes = mes, Anio = anio},
-        commandType: CommandType.StoredProcedure).ToList();   
-    }
-    return fechas;
-}
+
 
 public static Alquiler Reservar (int idC, int idU, int mes, int año, int sem)
 {
@@ -94,6 +84,21 @@ public static Alquiler Reservar (int idC, int idU, int mes, int año, int sem)
         commandType: CommandType.StoredProcedure);
     }
     return reservar;
+}
+
+public static List<int> ObtenerSemanasDisponibles(int idCasa, int mes, int anio)
+{
+    List<int> semanasDisponibles = new List<int>();
+
+    using (SqlConnection DB = new SqlConnection(_connectionString))
+    {
+        string SP = "ObtenerSemanasDisponibles";
+
+        semanasDisponibles = DB.Query<int>(SP, new { IDCasa = idCasa, mes = mes, anio = anio },
+            commandType: CommandType.StoredProcedure).ToList();
+    }
+
+    return semanasDisponibles;
 }
 
 public static List<Favorito> GuardarFavoritos(int idUsu, int idCasa)
