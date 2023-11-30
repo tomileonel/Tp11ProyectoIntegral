@@ -24,10 +24,10 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            @if (BD.Usuario != null)
-                              {
-                               <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Favoritos">Favoritos</a>
-                              }
+@if (BD.Usuario != null && BD.Usuario.IDUsuario != null)
+{
+    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Favoritos" asp-route-idUsu="@BD.Usuario.IDUsuario">Favoritos</a>
+}
                         </li>
                         <li class="nav-item">
                             @if (ViewBag.Index != null)

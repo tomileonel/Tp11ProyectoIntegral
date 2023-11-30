@@ -129,13 +129,13 @@ public static void SacarDeFavoritos(int idUsu, int idCasa)
     }
 }
 
-public static List<Favorito> VerFavoritos(int idUsu)
+public static List<Casa> VerFavoritos(int idUsu)
 {
-    List<Favorito> verFav = null;
+    List<Casa> verFav = null;
     using (SqlConnection DB = new SqlConnection(_connectionString))
     {
         string SP = "VerFavoritos";
-        verFav = DB.Query<Favorito>(SP, new {IDUsuario = idUsu},
+        verFav = DB.Query<Casa>(SP, new {IdUser = idUsu},
         commandType: CommandType.StoredProcedure).ToList(); 
     }
     return verFav;

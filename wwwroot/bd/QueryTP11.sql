@@ -182,6 +182,7 @@ ALTER PROCEDURE VerFavoritos
 	AS 
 	BEGIN
 		SELECT * FROM Favorito WHERE IDUsuario = @IdUser
+		
 	END 
 	GO
 EXEC VerFavoritos

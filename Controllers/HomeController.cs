@@ -39,11 +39,24 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult Favoritos (int idUsu)
+
+public IActionResult Favoritos(int idUsu)   
+{
+        ViewBag.Casas = BD.VerFavoritos(idUsu);
+        ViewBag.Perfil = BD.Usuario;
+        if(ViewBag.Perfil != null){
+            foreach (var casa in ViewBag.Casas)
     {
-        ViewBag.Favoritos = BD.VerFavoritos(idUsu);
+        casa.EsFavorito = BD.EsFavorito(BD.Usuario.IDUsuario, casa.IDCasa);
+    }
+    }
+        ViewBag.Index = true;
+        
         return View();
     }
+
+
+
 
     public IActionResult RegistroCompleto (string Nombre, string Apellido, string Email, string Contrasena)
     {
