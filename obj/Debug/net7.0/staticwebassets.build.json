@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9wmT8oymh7JzgIZtdEDN8itztK69cJfMBX38lnr9WIc=",
+  "Hash": "JUo0uD5uT1cTSZNmBefAU9IIZR6Fz+tKHD9+CXLZ+yk=",
   "Source": "Tp11ProyectoIntegral",
   "BasePath": "_content/Tp11ProyectoIntegral",
   "Mode": "Default",
@@ -221,12 +221,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\Imagenes\\BlueStacks10Installer_10.5.0.1016_native_7cab44eb5ee728e20e8d97e0be9971b3_MzsxNSwwOzUsMTsxNSw0OzE1.exe",
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\Imagenes\\casa.png",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
       "BasePath": "_content/Tp11ProyectoIntegral",
-      "RelativePath": "Imagenes/BlueStacks10Installer_10.5.0.1016_native_7cab44eb5ee728e20e8d97e0be9971b3_MzsxNSwwOzUsMTsxNSw0OzE1.exe",
+      "RelativePath": "Imagenes/casa.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -235,7 +235,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Imagenes\\BlueStacks10Installer_10.5.0.1016_native_7cab44eb5ee728e20e8d97e0be9971b3_MzsxNSwwOzUsMTsxNSw0OzE1.exe"
+      "OriginalItemSpec": "wwwroot\\Imagenes\\casa.png"
     },
     {
       "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\Imagenes\\Email.PNG",
@@ -253,23 +253,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Imagenes\\Email.PNG"
-    },
-    {
-      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\Imagenes\\scoped_dir7940_870424335\\BlueStacks10Installer_10.5.0.1016_native_7cab44eb5ee728e20e8d97e0be9971b3_MzsxNSwwOzUsMTsxNSw0OzE1.exe",
-      "SourceId": "Tp11ProyectoIntegral",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
-      "BasePath": "_content/Tp11ProyectoIntegral",
-      "RelativePath": "Imagenes/scoped_dir7940_870424335/BlueStacks10Installer_10.5.0.1016_native_7cab44eb5ee728e20e8d97e0be9971b3_MzsxNSwwOzUsMTsxNSw0OzE1.exe",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Imagenes\\scoped_dir7940_870424335\\BlueStacks10Installer_10.5.0.1016_native_7cab44eb5ee728e20e8d97e0be9971b3_MzsxNSwwOzUsMTsxNSw0OzE1.exe"
     },
     {
       "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\Imagenes\\Telefono.png",

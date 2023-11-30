@@ -36,6 +36,7 @@ public class HomeController : Controller
       public IActionResult Casa(int idCasa)
     {
         ViewBag.unaCasa = BD.TraerUnaCasa(idCasa);
+        ViewBag.Perfil = BD.Usuario;
         return View();
     }
 
@@ -60,8 +61,13 @@ public IActionResult Favoritos(int idUsu)
 
     public IActionResult RegistroCompleto (string Nombre, string Apellido, string Email, string Contrasena)
     {
+        if(BD.VerificarEmailRegistrado(Email)!=0){
+            ViewBag.Error = "Ya te has registrado anteriormente";
+            return View ("Registro");
+        }else{
         ViewBag.Usuario = BD.Registrarte(Nombre, Apellido, Email, Contrasena);
         return RedirectToAction("Index");
+        }
     }
 
         public IActionResult Registro()

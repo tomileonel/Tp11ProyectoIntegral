@@ -111,6 +111,20 @@ public static List<Favorito> GuardarFavoritos(int idUsu, int idCasa)
     return guardarFav;
 }
 
+public static int VerificarEmailRegistrado(string email)
+{
+    int registrosEncontrados;
+
+    using (SqlConnection DB = new SqlConnection(_connectionString))
+    {
+        string SP = "VerificarEmailRegistrado";
+        registrosEncontrados = DB.Query<int>(SP, new { Email = email },
+            commandType: CommandType.StoredProcedure).FirstOrDefault();
+    }
+
+    return registrosEncontrados;
+}
+
 public static bool EsFavorito(int idUsuario, int idCasa)
 {
     using (SqlConnection DB = new SqlConnection(_connectionString))

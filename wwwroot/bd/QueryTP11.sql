@@ -24,6 +24,7 @@ CREATE PROCEDURE Registrarte
 		
 	END 
 	GO
+	
 
 EXEC Registrarte
 --SP de editar perfil (todo menos id 6 campos)
@@ -109,17 +110,7 @@ EXEC ObtenerSemanasDisponibles
 
 
 --Reservar(idCasa,idUsuario,a�o,mes,semana)
-Create PROCEDURE Reservar
-@IdUser int,
-@IdCasa int,
-@anio int,
-@mes int,
-@semana int
-	AS
-	BEGIN 
-		INSERT INTO Alquiler(Anio,Mes,IDUsuario,IDCasa,Semana) VALUES (@anio, @mes,@IdUser,@IdCasa,@semana) 
-	END 
-	GO
+
 EXEC Reservar
 
 

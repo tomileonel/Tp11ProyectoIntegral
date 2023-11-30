@@ -36,10 +36,11 @@ body {
 }
 
 .card-container {
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
   justify-content: space-around;
+  
 
 }
 

@@ -15,9 +15,9 @@
 @if(@ViewBag.unaCasa.Parrila){
     <h5>Parrilla</h5>
 }
-
+@if(ViewBag.Perfil != null){
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ReservarCasa">Reservar Casa</button>
-
+}
 
 
 @* intento de reserva *@
@@ -66,6 +66,7 @@
 <input type="hidden" id="idCasa" name="idCasa" value="@ViewBag.unaCasa.IDCasa" />
 
                     <button type="submit" class="btn btn-primary">Reservar</button>
+
                 </form>
             </div>
         </div>

@@ -10,62 +10,73 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Tp11ProyectoIntegral</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-@if (BD.Usuario != null && BD.Usuario.IDUsuario != null)
-{
-    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Favoritos" asp-route-idUsu="@BD.Usuario.IDUsuario">Favoritos</a>
-}
-                        </li>
-                        <li class="nav-item">
-                            @if (ViewBag.Index != null)
-                                {
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Filtrar">Filtros</button>
-                                }
-                                
-                        </li>
-@if (BD.Usuario != null)
-{
-    @if (BD.Usuario.FotoDePerfil != null)
+
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                <img src="/Imagenes/casa.png" alt="" style="width: 20%;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+
+                
+            </button>
+            
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between align-items-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        @if (BD.Usuario != null && BD.Usuario.IDUsuario != null)
+                        {
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Favoritos" asp-route-idUsu="@BD.Usuario.IDUsuario">
+                                Favoritos
+                            </a>
+                        }
+                    </li>
+                    <li class="nav-item">
+                        @if (ViewBag.Index != null)
+                        {
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Filtrar">Filtros</button>
+                        }
+                    </li>
+                </ul>
+               <div class="d-sm-inline-flex align-items-center">
+    @if (BD.Usuario != null)
     {
-        <a asp-action="Perfil" asp-controller="Home">
-            <img src="@BD.Usuario.FotoDePerfil">
-        </a>
+        @if (BD.Usuario.FotoDePerfil != null)
+        {
+            <a asp-action="Perfil" asp-controller="Home" class="nav-link">
+                <img src="@BD.Usuario.FotoDePerfil" class="user-icon">
+            </a>
+        }
+        else
+        {
+            <a asp-action="Perfil" asp-controller="Home" class="nav-link">
+                <img src="https://campus.ort.edu.ar/static/images/avatar.gif" class="user-icon">
+            </a>
+        }
+        <div class="d-flex flex-column">
+            <a asp-action="Perfil" asp-controller="Home" class="nav-link">
+                @BD.Usuario.Nombre_usuario
+            </a>
+            <a asp-action="Perfil" asp-controller="Home" class="nav-link">
+                @BD.Usuario.Apellido_usuario
+            </a>
+        </div>
     }
     else
     {
-        <a asp-action="Perfil" asp-controller="Home">
-            <img src="https://campus.ort.edu.ar/static/images/avatar.gif">
-        </a>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#IniciarSesion">
+            <i class="bi bi-person"></i> Iniciar sesión
+        </button>
     }
-    <a asp-action="Perfil" asp-controller="Home">@BD.Usuario.Nombre_usuario</a>
-    <a asp-action="Perfil" asp-controller="Home">@BD.Usuario.Apellido_usuario</a>
-}
-else
-{
-    <li class="nav-item">
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#IniciarSesion">Iniciar sesión</button>
-    </li>
-}
-                            
-                        </li>
-                    </ul>
+</div>
                 </div>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
