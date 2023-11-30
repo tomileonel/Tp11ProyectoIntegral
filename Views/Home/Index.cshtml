@@ -4,27 +4,33 @@
 <h1>@ViewBag.Error</h1>
 <h1>@ViewBag.Reserva</h1>
 
-<div id="divCasa">
-    @foreach (Casa casa in ViewBag.Casas)
-    {
-      @if (ViewBag.Perfil == null)
-      {
-        casa.EsFavorito = false;
-      }
-<div class="card casa-card" >
-            <img src='@casa.FotoCasa' class="card-img-top" alt="@casa.Nombre_casa">
-            <div class="card-body text-center">
-                <h2 class="card-title">@casa.Nombre_casa</h2>
-                <h4 class="card-subtitle mb-2 text-muted">@casa.Direccion_casa</h4>
-                <h4 class="card-subtitle mb-2 text-muted">Precio: @casa.Precio</h4>
-                <a href='@Url.Action("Casa", new { IdCasa = @casa.IDCasa })' class="btn btn-primary btn-alquilar">Alquilar</a>
-                                <div class="corazon casa @(casa.EsFavorito ? "favorito" : "")" id="@casa.IDCasa" onclick="corazonC(@casa.IDCasa, this)">
-                    <i class="fas fa-heart"></i>
+<div id="divCasa" >
+    <div class="container-fluid">
+        <div class="row">
+            @foreach (Casa casa in ViewBag.Casas)
+            {
+            @if (ViewBag.Perfil == null)
+            {
+                casa.EsFavorito = false;
+            }
+                <div class="col-md-3 col-12">
+                    <div class="card casa-card" >
+                        <img src='@casa.FotoCasa' class="card-img-top" alt="@casa.Nombre_casa">
+                        <div class="card-body text-center">
+                            <h2 class="card-title">@casa.Nombre_casa</h2>
+                            <h4 class="card-subtitle mb-2 text-muted">@casa.Direccion_casa</h4>
+                            <h4 class="card-subtitle mb-2 text-muted">Precio: @casa.Precio</h4>
+                            <a href='@Url.Action("Casa", new { IdCasa = @casa.IDCasa })' class="btn btn-primary btn-alquilar">Alquilar</a>
+                                            <div class="corazon casa @(casa.EsFavorito ? "favorito" : "")" id="@casa.IDCasa" onclick="corazonC(@casa.IDCasa, this)">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            }
             </div>
-        </div>
+    </div>
 
-    }
 </div>
 
 

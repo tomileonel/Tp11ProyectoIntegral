@@ -2,22 +2,6 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
-function IniciarSesion(Email, Contraseña)
-{
-     $.ajax(
-        {
-            type: 'POST',
-            dataType: 'JSON',
-            url: '/Home/DetallesAjaxLogin',
-            data: { "Email": Email, "Contraseña": Contraseña},
-            success:
-                function (response)
-                {
-                    $(n)
-                }
-        }
-     )   
-}
 
 
   function buscar() {
@@ -28,13 +12,6 @@ function IniciarSesion(Email, Contraseña)
     let parrilla = $("#parrilla").is(":checked");
     let balcon = $("#balcon").is(":checked");
 
-    console.log("Direccion:", pais);
-    console.log("Precio:", precio);
-    console.log("Pileta:", pileta);
-    console.log("Parrilla:", parrilla);
-    console.log("CantAmb:", cantidad_ambientes);
-    console.log("Balcon:", balcon);
-
     $.ajax({
         url: "/Home/AjaxFiltros",
         type: "POST",
@@ -43,32 +20,37 @@ function IniciarSesion(Email, Contraseña)
           
             Direccion: pais,
             Precio: precio,
+            CantAmb: cantidad_ambientes,
             Pileta: pileta,
             Parrilla: parrilla,
-            CantAmb: cantidad_ambientes,
             Balcon: balcon
 
         },
         success: function (response) {
 
-                $("#divCasa").empty();
-                console.log(response)
-
-                for (var casa of response.data) {
-
-                    var txtCasa = "<div class=\"card\" style=\"width: 18rem;\"> \
-                                        <img src='" + casa.fotoCasa + "' class=\"card-img-top\" > \
-                                        <div class=\"card-body\"> \
+            $("#divCasa").empty();
+            let texto = '<div class="container-fluid"><div class="row">'
+            for (var casa of response.data) {
+                var txtCasa = "<div class=\"col-md-3 col-12\"> \
+                                    <div class=\"card casa-card\"> \
+                                        <img src='" + casa.fotoCasa + "' class=\"card-img-top\" alt=\"" + casa.nombre_casa + "\"> \
+                                        <div class=\"card-body text-center\"> \
                                             <h2 class=\"card-title\">" + casa.nombre_casa + "</h2> \
-                                            <h4 class=\"card-title\">" + casa.direccion_casa + "</h4> \
-                                            <h4 class=\"card-title\">" + casa.precio + "</h4> \
-                                            <a href='/Home/Casa?IdCasa=" + casa.idCasa + "' class=\"btn btn-primary\">Alquilar</a> \
+                                            <h4 class=\"card-subtitle mb-2 text-muted\">" + casa.direccion_casa + "</h4> \
+                                            <h4 class=\"card-subtitle mb-2 text-muted\">Precio: " + casa.precio + "</h4> \
+                                            <a href='/Home/Casa?IdCasa=" + casa.idCasa + "' class=\"btn btn-primary btn-alquilar\">Alquilar</a> \
+                                            <div class=\"corazon casa " + (casa.esFavorito ? "favorito" : "") + "\" id=\"" + casa.idCasa + "\" onclick=\"corazonC(" + casa.idCasa + ", this)\"> \
+                                                <i class=\"fas fa-heart\"></i> \
+                                            </div> \
                                         </div> \
-                                    </div>";
-                    $("#divCasa").append(txtCasa);
-
-                }
-            
+                                    </div> \
+                                </div>";
+                texto += txtCasa;
+            }
+            texto += '</div>';
+            texto += '</div>';
+            $("#divCasa").html(texto);
+               
         }
 
     });
@@ -86,7 +68,6 @@ function corazonC(idCasa) {
         success: function (response) {
 
             if (response.success) {
-                console.log(response.estaEnFavoritos); 
 
 
                 if (response.estaEnFavoritos) {
@@ -113,10 +94,11 @@ function cargarSemanasDisponibles() {
         data: { idCasa: idCasa, mes: mes, anio: anio },
         success: function (semanasDisponibles) {
             $('#semana').empty();
-            for (var i = 1; i <= 4; i++) {
-                var disabled = semanasDisponibles.indexOf(i) !== -1;
+            for (let i = 1; i <= 4; i++) {
+                let disabled = semanasDisponibles.indexOf(i) !== -1;
             
-                $('#semana').append('<option value="' + i + '" ' + (disabled ? 'disabled' : '') + '>Semana ' + i + '</option>');
+                $('#semana').append('<option id="opcion_' + i + '" value="' + i + '" ' + (disabled ? 'disabled' : '') + '>Semana ' + i + '</option>');
+                $('#opcion_'+i).css('color',(disabled ? 'red' : 'black'));
             }
 
             $('#semana').prop('disabled', false);

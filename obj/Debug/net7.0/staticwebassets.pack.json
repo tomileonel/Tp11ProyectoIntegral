@@ -17,8 +17,16 @@
       "PackagePath": "staticwebassets\\Imagenes\\casa.png"
     },
     {
-      "Id": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\bd\\2911.sql",
-      "PackagePath": "staticwebassets\\bd\\2911.sql"
+      "Id": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\Imagenes\\lupa.png",
+      "PackagePath": "staticwebassets\\Imagenes\\lupa.png"
+    },
+    {
+      "Id": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\Imagenes\\person.png",
+      "PackagePath": "staticwebassets\\Imagenes\\person.png"
+    },
+    {
+      "Id": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\bd\\3011.sql",
+      "PackagePath": "staticwebassets\\bd\\3011.sql"
     },
     {
       "Id": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\bd\\QueryTP11.sql",
@@ -31,6 +39,10 @@
     {
       "Id": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\bd\\historial bd\\2311.sql",
       "PackagePath": "staticwebassets\\bd\\historial bd\\2311.sql"
+    },
+    {
+      "Id": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\bd\\historial bd\\2911.sql",
+      "PackagePath": "staticwebassets\\bd\\historial bd\\2911.sql"
     },
     {
       "Id": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\bd\\historial bd\\BDtp11.sql",

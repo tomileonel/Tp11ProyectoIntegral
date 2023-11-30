@@ -51,7 +51,6 @@ public IActionResult Favoritos(int idUsu)
         casa.EsFavorito = BD.EsFavorito(BD.Usuario.IDUsuario, casa.IDCasa);
     }
     }
-        ViewBag.Index = true;
         
         return View();
     }
@@ -89,11 +88,6 @@ public IActionResult Favoritos(int idUsu)
 
 public IActionResult ToggleFavorito(int idCasa)
 {
-
-        if (BD.Usuario == null)
-        {
-            Console.WriteLine("BD.Usuario es nulo.");
-        }
 
         bool estaEnFavoritos = BD.EsFavorito(BD.Usuario.IDUsuario, idCasa);
 

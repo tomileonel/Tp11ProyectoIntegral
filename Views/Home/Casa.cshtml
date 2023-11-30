@@ -1,6 +1,8 @@
 @{
     ViewData["Title"] = "Casa";
 }
+<div class="container2">
+<div class = "casaind" >
 <img src = '@ViewBag.unaCasa.FotoCasa'>
 <h2>@ViewBag.unaCasa.Nombre_casa</h2>
 <h5>Pais @ViewBag.unaCasa.Direccion_casa</h5>
@@ -18,6 +20,8 @@
 @if(ViewBag.Perfil != null){
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ReservarCasa">Reservar Casa</button>
 }
+</div>
+</div>
 
 
 @* intento de reserva *@
@@ -27,7 +31,6 @@
             <div class="modal-header">
                 <h5 class="modal-title" id="reservarModalLabel">Reservar Casa</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">

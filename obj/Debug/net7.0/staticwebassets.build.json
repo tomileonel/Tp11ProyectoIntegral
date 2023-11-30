@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JUo0uD5uT1cTSZNmBefAU9IIZR6Fz+tKHD9+CXLZ+yk=",
+  "Hash": "zH0lin1nCAAvWV1wWHXbISeJAEjrrVu7BF8Y4i6ixBg=",
   "Source": "Tp11ProyectoIntegral",
   "BasePath": "_content/Tp11ProyectoIntegral",
   "Mode": "Default",
@@ -51,12 +51,12 @@
       "OriginalItemSpec": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Tp11ProyectoIntegral.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\bd\\2911.sql",
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\bd\\3011.sql",
       "SourceId": "Tp11ProyectoIntegral",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
       "BasePath": "_content/Tp11ProyectoIntegral",
-      "RelativePath": "bd/2911.sql",
+      "RelativePath": "bd/3011.sql",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -65,7 +65,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\bd\\2911.sql"
+      "OriginalItemSpec": "wwwroot\\bd\\3011.sql"
     },
     {
       "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\bd\\historial bd\\2211.sql",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\bd\\historial bd\\2311.sql"
+    },
+    {
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\bd\\historial bd\\2911.sql",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+      "BasePath": "_content/Tp11ProyectoIntegral",
+      "RelativePath": "bd/historial bd/2911.sql",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\bd\\historial bd\\2911.sql"
     },
     {
       "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\bd\\historial bd\\bdcorregido.sql",
@@ -253,6 +270,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Imagenes\\Email.PNG"
+    },
+    {
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\Imagenes\\lupa.png",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+      "BasePath": "_content/Tp11ProyectoIntegral",
+      "RelativePath": "Imagenes/lupa.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Imagenes\\lupa.png"
+    },
+    {
+      "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\Imagenes\\person.png",
+      "SourceId": "Tp11ProyectoIntegral",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\",
+      "BasePath": "_content/Tp11ProyectoIntegral",
+      "RelativePath": "Imagenes/person.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Imagenes\\person.png"
     },
     {
       "Identity": "C:\\Users\\47349708\\Documents\\Tp11ProyectoIntegral\\wwwroot\\Imagenes\\Telefono.png",

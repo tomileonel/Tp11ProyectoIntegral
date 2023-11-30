@@ -21,9 +21,10 @@ body {
   margin-bottom: 60px;
 }
 
+
+
 .icon{
-  width: 10px;
-  height: 10px;
+width: 4%;
 }
 
 #corazon {
@@ -68,6 +69,7 @@ body {
   border-top-right-radius: 8px;
 }
 
+
 .card-body {
   padding: 20px;
 }
@@ -75,6 +77,24 @@ body {
 .card-title {
   font-size: 1.5rem;
   margin-bottom: 10px;
+}
+
+.casaind img
+{
+  display: left;
+  width: 380px;
+  height: auto;
+  border-radius: 8px;
+
+}
+
+.casaind h2{
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+
+}
+
+.casaind h5{
+ 
 }
 
 .card-subtitle {
@@ -101,22 +121,40 @@ body {
   background-color: #27ae60;
 }
 
+.form{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /*registro*/
 
 .container {
-  width: 300px;
-  margin: 5% auto; 
-   padding: 30px;
-  display: flex;
+  
+  margin: auto; 
+   padding: 12px;
   text-align: center;
   flex-direction: column;
   align-items: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.container h2{
-  font-size: 30px;
-  margin-bottom: 15%;
 
+
+.user-icon
+{
+  width: 100px;
+  height: auto;
+  float: left;
+}
+
+
+.navbar-nav a
+{
+  text-align: left;
+}
+
+.casaind h2
+{
+  margin-bottom: 2%;
 }
 
 input[type="text"], input[type="password"],input[type="email"],input[type="tel"] {
@@ -131,10 +169,15 @@ input[type="submit"] {
   background-color: #4CAF50;
   color: white;
   padding: 10px 20px;
- border: none;
-  width: 100%;
+  border: none;
+  width: 20%;
   margin-top: 5%;
  
+}
+.namereg{
+  margin-bottom: 5%;
+  margin-top: 2%;
+  text-transform: uppercase;
 }
 
 
