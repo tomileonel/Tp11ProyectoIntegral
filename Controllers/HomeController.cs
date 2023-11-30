@@ -162,11 +162,36 @@ Telefono = BD.Usuario.Telefono;
 // intento de reserva
     public JsonResult ObtenerSemanasDisponibles(int idCasa, int mes, int anio)
     {
-            Console.WriteLine($"IdCasa: {idCasa}, Mes: {mes}, Anio: {anio}");
-
         List<int> semanasDisponibles = BD.ObtenerSemanasDisponibles(idCasa, mes, anio);
         return Json(semanasDisponibles);
     }
+
+public IActionResult Reservar(int anio, int mes,int semana,int idCasa){
+    BD.Reservar(idCasa,BD.Usuario.IDUsuario,mes,anio,semana);
+           ViewBag.Casas = BD.TraerCasas();
+        ViewBag.Perfil = BD.Usuario;
+        if(ViewBag.Perfil != null){
+            foreach (var casa in ViewBag.Casas)
+    {
+        casa.EsFavorito = BD.EsFavorito(BD.Usuario.IDUsuario, casa.IDCasa);
+    }
+    }
+        ViewBag.Index = true;
+        ViewBag.Reserva= "Se ha reservado correctamente";
+
+    return View("Index");
+}
+
+// public static void Reservar (int idC, int idU, int mes, int año, int sem)
+// {
+//     using (SqlConnection DB = new SqlConnection(_connectionString))
+//     {
+//         string SP = "Reservar";
+//         DB.Execute(SP, new {IDCasa = idC, IDUsuario = idU, Mes = mes, Anio = año, Semana = sem},
+//         commandType: CommandType.StoredProcedure);
+//     }
+// }
+
 public IActionResult AjaxFiltros(string Direccion, float Precio, bool Pileta, bool Parrilla, int CantAmb, bool Balcon)
 {
 

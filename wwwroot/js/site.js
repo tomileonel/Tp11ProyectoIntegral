@@ -101,23 +101,6 @@ function corazonC(idCasa) {
     });
 }
 //intento de reserva
-function enviarReserva() {
-    var anio = $('#anio').val();
-    var mes = $('#mes').val();
-    var semana = $('#semana').val();
-
-    $.ajax({
-        url: '/TuControlador/ReservarCasa',
-        type: 'POST',
-        contentType: 'application/json',
-        data: JSON.stringify({ Anio: anio, Mes: mes, Semana: semana }),
-        success: function (data) {
-        },
-        error: function (error) {
-            console.error('Error al enviar la solicitud:', error);
-        }
-    });
-}
 
 function cargarSemanasDisponibles() {
     var idCasa = $('#idCasa').val(); 

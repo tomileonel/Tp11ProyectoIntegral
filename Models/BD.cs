@@ -3,7 +3,7 @@ using System.Data;
 using Dapper;
 
 public static class BD {
-    private static string _connectionString = @"Server=DESKTOP-PPCLIMN\SQLEXPRESS; DataBase=TP11Integral; Trusted_Connection=True;";
+    private static string _connectionString = @"Server=.; DataBase=TP11Integral; Trusted_Connection=True;";
 
 public static Registro Usuario = null;
 public static Registro IniciarSesion(string Email1, string Contrasena)
@@ -74,16 +74,14 @@ public static List<Casa> TraerCasas()
 
 
 
-public static Alquiler Reservar (int idC, int idU, int mes, int año, int sem)
+public static void Reservar (int idC, int idU, int mes, int año, int sem)
 {
-    Alquiler reservar = null;
     using (SqlConnection DB = new SqlConnection(_connectionString))
     {
         string SP = "Reservar";
-        reservar = DB.QueryFirstOrDefault<Alquiler>(SP, new {IDCasa = idC, IDUsuario = idU, Mes = mes, Anio = año, Semana = sem},
+        DB.Execute(SP, new {IDCasa = idC, IdUser = idU, Mes = mes, Anio = año, Semana = sem},
         commandType: CommandType.StoredProcedure);
     }
-    return reservar;
 }
 
 public static List<int> ObtenerSemanasDisponibles(int idCasa, int mes, int anio)
