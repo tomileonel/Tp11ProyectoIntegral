@@ -215,3 +215,64 @@ CREATE PROCEDURE CantidadAmbientes
 	END
 	GO
 EXEC CantidadAmbientes
+
+//*a partir de aca*//
+
+alter PROCEDURE AgregarCasas
+@nombre Varchar(50),
+@direccion Varchar(50),
+@precio Real,
+@pileta bit,
+@parrilla bit,
+@CantidadAmbientes int,
+@bacon bit,
+@IDUsuario int,
+@foto text
+	AS
+	BEGIN
+		INSERT INTO Casa (Nombre_casa,Direccion_casa,Precio,Pileta,Parrila,Cantidad_ambientes,Balcon, FotoCasa, IDUsuario)
+		VALUES(@nombre,@direccion, @precio, @pileta, @parrilla, @cantidadAmbientes, @bacon, @foto, @IDUsuario)
+	END
+	GO
+EXEC AgregarCasas @nombre=nacache,@direccion = '1', @precio = 2, @pileta = 1, @parrilla = 1, @CantidadAmbientes = 5, @bacon = 1, @foto = 'a', @IDUsuario = 3;
+
+
+CREATE PROCEDURE listarCasas
+@IDUsuario int
+	AS
+	BEGIN
+		SELECT * FROM Casa WHERE IDUsuario = @IDUsuario
+	END
+	GO
+EXEC listarCasas @IDUsuario = 3;
+
+CREATE PROCEDURE BorrarCasa
+@idCasa int
+	AS
+	BEGIN
+		DELETE from Casa WHERE IDCasa = @idCasa
+	END
+	GO
+EXEC BorrarCasa @idCasa = 17
+
+
+CREATE PROCEDURE ModificarCasa
+@IdCasa int,
+@nombre Varchar(50),
+@direccion Varchar(50),
+@precio Real,
+@pileta bit,
+@parrilla bit,
+@CantidadAmbientes int,
+@bacon bit,
+@foto text
+	AS
+	BEGIN 
+		UPDATE Casa
+		SET Nombre_Casa = @nombre, Direccion_casa = @direccion, Precio = @precio, Pileta = @pileta, Parrila = @parrilla, Cantidad_ambientes = @CantidadAmbientes, Balcon = @bacon, FotoCasa = @foto
+		WHERE IDCasa = @IdCasa
+	END
+	GO
+EXEC ModificarCasa @nombre=nacache,@direccion = '1', @precio = 2, @pileta = 1, @parrilla = 1, @CantidadAmbientes = 5, @bacon = 1, @foto = 'a', @IdCasa = 5;
+
+	

@@ -172,52 +172,33 @@ public static Casa TraerUnaCasa(int idCasa)
 
 
 
-// public static List<Casa> TienePileta(bool pileta)
-// {
-//     Casa pile = null;
-//     using (SqlConnection DB = new SqlConnection(_connectionString))
-//     {
-//         string SP = "TienePileta";
-//         pile = DB.Query<Casa>(SP, new {Pileta = pileta},
-//         commandType: CommandType.StoredProcedure).ToList(); 
-//     }
-//     return pile;
-// }
 
-// public static Casa TieneParrilla(bool parrilla)
-// {
-//     Casa parri = null;
-//     using (SqlConnection DB = new SqlConnection(_connectionString))
-//     {
-//         string SP = "TieneParrilla";
-//         parri = DB.Query<Casa>(SP, new {Parrilla = parrilla},
-//         commandType: CommandType.StoredProcedure).ToList(); 
-//     }
-//     return parri;
-// }
 
-// public static Casa TieneBalcon(bool balcon)
-// {
-//     Casa bal = null;
-//     using (SqlConnection DB = new SqlConnection(_connectionString))
-//     {
-//         string SP = "TieneBalcon";
-//         bal = DB.Query<Casa>(SP, new {Balcon = balcon},
-//         commandType: CommandType.StoredProcedure).ToList(); 
-//     }
-//     return bal;
-// }
 
-// public static Casa CantidadAmbientes(int cantAmbientes)
-// {
-//     Casa amb = null;
-//     using (SqlConnection DB = new SqlConnection(_connectionString))
-//     {
-//         string SP = "CantidadAmbientes";
-//         amb = DB.Query<Casa>(SP, new {Cantidad_ambientes = cantAmbientes},
-//         commandType: CommandType.StoredProcedure).ToList(); 
-//     }
-//     return amb;
-// }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+public static Casa AgregarCasa(string Nombre_Casa, string Direccion_casa, double Precio, bool Pileta, bool Parrila, int Cantidad_ambientes, bool Balcon, string FotoCasa, int IDUsuario)
+{
+    Casa unaCasa = null;
+    using (SqlConnection DB = new SqlConnection(_connectionString))
+    {
+        string SP = "AgregarCasas";
+        unaCasa = DB.QueryFirstOrDefault<Casa>(SP, new {IdCasa = idCasa},
+        commandType: CommandType.StoredProcedure);
+    }
+}
+
+public static Casa listarCasa
 }
