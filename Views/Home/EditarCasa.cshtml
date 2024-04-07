@@ -1,0 +1,65 @@
+@model Casa
+
+@{
+    ViewData["Title"] = "Editar Casa";
+}
+<h2>Editar Casa</h2>
+
+<form asp-action="GuardarEdicion" method="post">
+    <input type="hidden" asp-for="IDCasa" />
+    
+    <div class="form-group">
+        <label asp-for="Nombre_casa">Nombre:</label>
+        <input asp-for="Nombre_casa" class="form-control" value="@Model.Nombre_casa"required />
+    </div>
+
+    <div class="form-group">
+    <label asp-for="FotoCasa" >Foto de la casa:</label>
+    <input asp-for="FotoCasa" type="text" value="@Model.FotoCasa" required />
+    </div>
+    
+    <div class="form-group">
+        <label asp-for="Direccion_casa">Dirección:</label>
+        <input asp-for="Direccion_casa" class="form-control" value="@Model.Direccion_casa"required />
+    </div>
+    
+    <div class="form-group">
+        <label asp-for="Precio">Precio:</label>
+        <input asp-for="Precio" class="form-control" value="@Model.Precio"required />
+    </div>
+    
+    <div class="form-group">
+        <label asp-for="Pileta">Pileta:</label>
+        @if(Model.Pileta){
+                    <input asp-for="Pileta" type="checkbox" class="form-check-input" checked= "true" />
+
+        }else{
+                    <input asp-for="Pileta" type="checkbox" class="form-check-input" />
+                    }
+    </div>
+    
+    <div class="form-group">
+        <label asp-for="Parrila">Parrilla:</label>
+@if(Model.Parrila){
+    <input asp-for="Parrila" type="checkbox" class="form-check-input" checked="checked" />
+}
+else {
+    <input asp-for="Parrila" type="checkbox" class="form-check-input" />
+}    </div>
+    
+    <div class="form-group">
+        <label asp-for="Cantidad_ambientes">Cantidad de ambientes:</label>
+        <input asp-for="Cantidad_ambientes" class="form-control" value="@Model.Cantidad_ambientes"  />
+    </div>
+    
+    <div class="form-group">
+        <label asp-for="Balcon">Balcón:</label>
+@if(Model.Balcon){
+    <input asp-for="Balcon" type="checkbox" class="form-check-input" checked="checked" />
+}
+else {
+    <input asp-for="Balcon" type="checkbox" class="form-check-input" />
+}    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>

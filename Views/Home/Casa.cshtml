@@ -2,43 +2,52 @@
     ViewData["Title"] = "Casa";
 }
 <div class="container2">
-<div class = "casaind" >
-<img src = '@ViewBag.unaCasa.FotoCasa'>
-<h2>@ViewBag.unaCasa.Nombre_casa</h2>
-<h5>Pais @ViewBag.unaCasa.Direccion_casa</h5>
-<h5>Precio @ViewBag.unaCasa.Precio</h5>
-<h5>Cantidad ambientes @ViewBag.unaCasa.Cantidad_ambientes</h5>
-@if(@ViewBag.unaCasa.Pileta){
-    <h5>Pileta</h5>
-}
-@if(@ViewBag.unaCasa.Balcon){
-    <h5>Balcon</h5>
-}
-@if(@ViewBag.unaCasa.Parrila){
-    <h5>Parrilla</h5>
-}
-@if(ViewBag.Perfil != null){
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ReservarCasa">Reservar Casa</button>
-}
-</div>
+    <div class="casaind">
+        <img src='@ViewBag.unaCasa.FotoCasa'>
+        <h2>@ViewBag.unaCasa.Nombre_casa</h2>
+        <h5>Pais @ViewBag.unaCasa.Direccion_casa</h5>
+        <h5>Precio @ViewBag.unaCasa.Precio</h5>
+        <h5>Cantidad ambientes @ViewBag.unaCasa.Cantidad_ambientes</h5>
+        @if(@ViewBag.unaCasa.Pileta){
+            <h5>Pileta</h5>
+        }
+        @if(@ViewBag.unaCasa.Balcon){
+            <h5>Balcon</h5>
+        }
+        @if(@ViewBag.unaCasa.Parrila){
+            <h5>Parrilla</h5>
+        }
+        @if (ViewBag.Perfil != null)
+        {
+            if (ViewBag.unaCasa.IDUsuario == ViewBag.Perfil.IDUsuario)
+            {
+                if (ViewBag.unaCasa != null)
+                {
+                    <a href='@Url.Action("EditarCasa", new { idCasa = ViewBag.unaCasa.IDCasa })' class="btn btn-primary">Editar Casa</a>
+                }
+                else
+                {
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ReservarCasa">Reservar Casa</button>
+                }
+            }
+        }
+    </div>
 </div>
 
-
-@* intento de reserva *@
+<!-- intento de reserva -->
 <div class="modal fade" id="ReservarCasa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="reservarModalLabel">Reservar Casa</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </button>
             </div>
             <div class="modal-body">
                 <form id="reservaForm" action="Reservar" method="post">
                     <div class="form-group">
                         <label for="anio">Año:</label>
                         <select class="form-control" id="anio" name="anio">
-                                                        <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="" disabled selected>Selecciona una opción</option>
                             @for (int i = 2023; i <= 2030; i++)
                             {
                                 <option value="@i">@i</option>
@@ -58,7 +67,6 @@
                     <div class="form-group">
                         <label for="semana">Semana:</label>
                         <select class="form-control" id="semana" name="semana" disabled>
-                            
                             @for (int i = 1; i <= 4; i++)
                             {
                                 <option value="@i">Semana @i</option>
@@ -66,7 +74,7 @@
                         </select>
                     </div>
 
-<input type="hidden" id="idCasa" name="idCasa" value="@ViewBag.unaCasa.IDCasa" />
+                    <input type="hidden" id="idCasa" name="idCasa" value="@ViewBag.unaCasa.IDCasa" />
 
                     <button type="submit" class="btn btn-primary">Reservar</button>
 

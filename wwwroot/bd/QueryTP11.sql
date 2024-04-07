@@ -237,7 +237,7 @@ alter PROCEDURE AgregarCasas
 EXEC AgregarCasas @nombre=nacache,@direccion = '1', @precio = 2, @pileta = 1, @parrilla = 1, @CantidadAmbientes = 5, @bacon = 1, @foto = 'a', @IDUsuario = 3;
 
 
-CREATE PROCEDURE listarCasas
+CREATE PROCEDURE listarCasasUsuario
 @IDUsuario int
 	AS
 	BEGIN

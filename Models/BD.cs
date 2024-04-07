@@ -3,7 +3,7 @@ using System.Data;
 using Dapper;
 
 public static class BD {
-    private static string _connectionString = @"Server=.; DataBase=TP11Integral; Trusted_Connection=True;";
+    private static string _connectionString = @"Server=DESKTOP-PPCLIMN\SQLEXPRESS; DataBase=TP11Integral; Trusted_Connection=True;";
 
 public static Registro Usuario = null;
 public static Registro IniciarSesion(string Email1, string Contrasena)
@@ -170,35 +170,75 @@ public static Casa TraerUnaCasa(int idCasa)
     return unaCasa;
 }
 
+// Extra
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-public static Casa AgregarCasa(string Nombre_Casa, string Direccion_casa, double Precio, bool Pileta, bool Parrila, int Cantidad_ambientes, bool Balcon, string FotoCasa, int IDUsuario)
+public static void AgregarCasa(string nombre, string direccion, double precio, bool pileta, bool parrilla, int cantidadAmbientes, bool bacon, int idUsuario, string foto)
 {
-    Casa unaCasa = null;
-    using (SqlConnection DB = new SqlConnection(_connectionString))
+    using (SqlConnection connection = new SqlConnection(_connectionString))
     {
-        string SP = "AgregarCasas";
-        unaCasa = DB.QueryFirstOrDefault<Casa>(SP, new {IdCasa = idCasa},
-        commandType: CommandType.StoredProcedure);
+        string storedProcedure = "AgregarCasas";
+        connection.Open();
+        connection.Execute(
+            storedProcedure,
+            new
+            {
+                nombre = nombre,
+                direccion = direccion,
+                precio = precio,
+                pileta = pileta,
+                parrilla = parrilla,
+                CantidadAmbientes = cantidadAmbientes,
+                bacon = bacon,
+                IDUsuario = idUsuario,
+                foto = foto
+            },
+            commandType: CommandType.StoredProcedure);
     }
 }
 
-public static Casa listarCasa
+public static List<Casa> ListarCasasUsuario(int idUsuario)
+{
+    using (SqlConnection connection = new SqlConnection(_connectionString))
+    {
+        string storedProcedure = "listarCasasUsuario";
+        connection.Open();
+        return connection.Query<Casa>(storedProcedure, new { IDUsuario = idUsuario }, commandType: CommandType.StoredProcedure).ToList();
+    }
+}
+
+
+public static void BorrarCasa(int idCasa)
+{
+    using (SqlConnection connection = new SqlConnection(_connectionString))
+    {
+        string storedProcedure = "BorrarCasa";
+        connection.Open();
+        connection.Execute(storedProcedure, new { idCasa = idCasa }, commandType: CommandType.StoredProcedure);
+    }
+}
+
+
+public static void ModificarCasa(int idCasa, string nombre, string direccion, double precio, bool pileta, bool parrilla, int cantidadAmbientes, bool bacon, string foto)
+{
+    using (SqlConnection connection = new SqlConnection(_connectionString))
+    {
+        string storedProcedure = "ModificarCasa";
+        connection.Open();
+        connection.Execute(
+            storedProcedure,
+            new
+            {
+                IdCasa = idCasa,
+                nombre = nombre,
+                direccion = direccion,
+                precio = precio,
+                pileta = pileta,
+                parrilla = parrilla,
+                CantidadAmbientes = cantidadAmbientes,
+                bacon = bacon,
+                foto = foto
+            },
+            commandType: CommandType.StoredProcedure);
+    }
+}
 }

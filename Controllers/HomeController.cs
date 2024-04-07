@@ -37,6 +37,11 @@ public class HomeController : Controller
     {
         ViewBag.unaCasa = BD.TraerUnaCasa(idCasa);
         ViewBag.Perfil = BD.Usuario;
+        if (ViewBag.unaCasa != null){
+            RedirectToAction ("Index");
+        }
+{
+}
         return View();
     }
 
@@ -209,6 +214,47 @@ public IActionResult AjaxFiltros(string Direccion, float Precio, bool Pileta, bo
     public IActionResult Error()
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+    }
+
+public IActionResult EditarCasa(int idCasa)
+{
+    Casa casa = BD.TraerUnaCasa(idCasa);
+
+    return View("EditarCasa", casa);
+}
+
+[HttpPost]
+public IActionResult GuardarEdicion(Casa casa)
+{
+
+        string foto = casa.FotoCasa ?? "";
+
+        BD.ModificarCasa(casa.IDCasa, casa.Nombre_casa, casa.Direccion_casa, casa.Precio, casa.Pileta, casa.Parrila, casa.Cantidad_ambientes, casa.Balcon, foto);
+        
+        return RedirectToAction("Casa", new { idCasa = casa.IDCasa });
+    }
+
+public IActionResult MisCasas(int idUsu)   
+{
+        ViewBag.Casas = BD.ListarCasasUsuario(idUsu);
+        ViewBag.Perfil = BD.Usuario;
+    
+        
+        return View();
+    }
+
+    public IActionResult IrAAgregarCasa()
+    {
+        return View("agregarCasa");
+    }
+
+        public IActionResult AgregarCasa(Casa casa)
+    {
+
+            BD.AgregarCasa(casa.Nombre_casa, casa.Direccion_casa, casa.Precio, casa.Pileta, casa.Parrila, casa.Cantidad_ambientes, casa.Balcon, BD.Usuario.IDUsuario, casa.FotoCasa);
+        
+            return RedirectToAction("MisCasas",new { idUsu = BD.Usuario.IDUsuario }); 
+       
     }
 
 

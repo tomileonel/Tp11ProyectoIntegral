@@ -1,0 +1,43 @@
+@model Casa
+
+@{
+    ViewData["Title"] = "Agregar Casa";
+}
+
+<h2>Agregar Casa</h2>
+
+<form asp-action="AgregarCasa" method="post">
+    <div class="form-group">
+        <label asp-for="Nombre_casa">Nombre:</label>
+        <input asp-for="Nombre_casa" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label asp-for="Direccion_casa">Dirección:</label>
+        <input asp-for="Direccion_casa" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label asp-for="Precio">Precio:</label>
+        <input asp-for="Precio" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label asp-for="Pileta">Pileta:</label>
+        <input asp-for="Pileta" type="checkbox" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Parrila">Parrilla:</label>
+        <input asp-for="Parrila" type="checkbox" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Cantidad_ambientes">Cantidad de ambientes:</label>
+        <input asp-for="Cantidad_ambientes" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label asp-for="Balcon">Balcón:</label>
+        <input asp-for="Balcon" type="checkbox" />
+    </div>
+    <div class="form-group">
+        <label asp-for="FotoCasa">Foto de la Casa:</label>
+        <input asp-for="FotoCasa" class="form-control" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Agregar Casa</button>
+</form>
