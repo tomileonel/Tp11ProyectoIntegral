@@ -19,17 +19,17 @@
         }
         @if (ViewBag.Perfil != null)
         {
-            if (ViewBag.unaCasa.IDUsuario == ViewBag.Perfil.IDUsuario)
-            {
-                if (ViewBag.unaCasa != null)
+
+                if (ViewBag.unaCasa.IDUsuario == ViewBag.Perfil.IDUsuario)
                 {
                     <a href='@Url.Action("EditarCasa", new { idCasa = ViewBag.unaCasa.IDCasa })' class="btn btn-primary">Editar Casa</a>
+                    <a href = '@Url.Action("BorrarCasa", new { idCasa = ViewBag.unaCasa.IDCasa })' class = "btn btn-primary">Borrar Casa</a>
                 }
                 else
                 {
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ReservarCasa">Reservar Casa</button>
                 }
-            }
+            
         }
     </div>
 </div>
@@ -48,7 +48,7 @@
                         <label for="anio">Año:</label>
                         <select class="form-control" id="anio" name="anio">
                             <option value="" disabled selected>Selecciona una opción</option>
-                            @for (int i = 2023; i <= 2030; i++)
+                            @for (int i = 2024; i <= 2030; i++)
                             {
                                 <option value="@i">@i</option>
                             }
