@@ -234,15 +234,20 @@ public IActionResult GuardarEdicion(Casa casa)
         return RedirectToAction("Casa", new { idCasa = casa.IDCasa });
     }
 
-public IActionResult MisCasas(int idUsu)   
+public IActionResult MisCasas(int idUsu)
 {
-        ViewBag.Casas = BD.ListarCasasUsuario(idUsu);
-        ViewBag.Perfil = BD.Usuario;
-    
-        
-        return View();
-    }
 
+ViewBag.Casas = BD.ListarCasasUsuario(idUsu);
+ViewBag.Perfil = BD.Usuario;
+if(ViewBag.Perfil != null){
+foreach (var casa in ViewBag.Casas)
+{
+casa.EsFavorito = BD.EsFavorito(BD.Usuario.IDUsuario, casa.IDCasa);
+}
+}
+
+return View();
+}
     public IActionResult IrAAgregarCasa()
     {
         return View("agregarCasa");
