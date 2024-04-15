@@ -148,7 +148,6 @@ C:\Users\47349708\Downloads\Tp11ProyectoIntegral\obj\Debug\net7.0\staticwebasset
 C:\Users\47349708\Downloads\Tp11ProyectoIntegral\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\47349708\Downloads\Tp11ProyectoIntegral\obj\Debug\net7.0\scopedcss\bundle\Tp11ProyectoIntegral.styles.css
 C:\Users\47349708\Downloads\Tp11ProyectoIntegral\obj\Debug\net7.0\scopedcss\projectbundle\Tp11ProyectoIntegral.bundle.scp.css
-C:\Users\47349708\Downloads\Tp11ProyectoIntegral\obj\Debug\net7.0\Tp11ProyectoIntegral.csproj.CopyComplete
 C:\Users\47349708\Downloads\Tp11ProyectoIntegral\obj\Debug\net7.0\Tp11ProyectoIntegral.dll
 C:\Users\47349708\Downloads\Tp11ProyectoIntegral\obj\Debug\net7.0\refint\Tp11ProyectoIntegral.dll
 C:\Users\47349708\Downloads\Tp11ProyectoIntegral\obj\Debug\net7.0\Tp11ProyectoIntegral.pdb
@@ -273,3 +272,5 @@ D:\OneDrive\Documentos\Tp11ProyectoIntegral\obj\Debug\net7.0\refint\Tp11Proyecto
 D:\OneDrive\Documentos\Tp11ProyectoIntegral\obj\Debug\net7.0\Tp11ProyectoIntegral.pdb
 D:\OneDrive\Documentos\Tp11ProyectoIntegral\obj\Debug\net7.0\Tp11ProyectoIntegral.genruntimeconfig.cache
 D:\OneDrive\Documentos\Tp11ProyectoIntegral\obj\Debug\net7.0\ref\Tp11ProyectoIntegral.dll
+C:\Users\47349708\Downloads\Tp11ProyectoIntegral\obj\Debug\net7.0\Tp11ProyectoIntegral.sourcelink.json
+C:\Users\47349708\Downloads\Tp11ProyectoIntegral\obj\Debug\net7.0\Tp11Proy.6875E927.Up2Date

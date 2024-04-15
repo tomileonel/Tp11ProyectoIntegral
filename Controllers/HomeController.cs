@@ -262,6 +262,14 @@ return View();
        
     }
 
+    
+        public IActionResult BorrarCasa(int idCasa)
+    {
+            BD.BorrarCasa(idCasa);
+            return RedirectToAction("MisCasas",new { idUsu = BD.Usuario.IDUsuario }); 
+            
+    }
+
 
   
 }

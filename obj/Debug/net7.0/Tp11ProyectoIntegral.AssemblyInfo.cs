@@ -13,7 +13,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tp11ProyectoIntegral")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+50b1b4d0420984a26d0e74b77e5803555f9a0e03")]
+>>>>>>> 47478b689224c54b13104822aa46f81af7a0a2c8
 [assembly: System.Reflection.AssemblyProductAttribute("Tp11ProyectoIntegral")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tp11ProyectoIntegral")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
